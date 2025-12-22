@@ -21,6 +21,7 @@ namespace TeknikServisOtomasyonu
         public Nullable<System.DateTime> TARIH { get; set; }
         public Nullable<short> ADET { get; set; }
         public Nullable<decimal> FIYAT { get; set; }
+        public string URUNSERINO { get; set; }
     
         public virtual TBL_Cari TBL_Cari { get; set; }
         public virtual TBL_Personel TBL_Personel { get; set; }

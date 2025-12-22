@@ -153,6 +153,7 @@
     <EntitySetMapping Name="TBL_UrunHareket">
       <EntityTypeMapping TypeName="DBTEKNIKSERVISModel.TBL_UrunHareket">
         <MappingFragment StoreEntitySet="TBL_UrunHareket">
+          <ScalarProperty Name="URUNSERINO" ColumnName="URUNSERINO" />
           <ScalarProperty Name="HAREKETID" ColumnName="HAREKETID" />
           <ScalarProperty Name="URUN" ColumnName="URUN" />
           <ScalarProperty Name="MUSTERI" ColumnName="MUSTERI" />
@@ -166,8 +167,8 @@
     <EntitySetMapping Name="TBL_UrunKabul">
       <EntityTypeMapping TypeName="DBTEKNIKSERVISModel.TBL_UrunKabul">
         <MappingFragment StoreEntitySet="TBL_UrunKabul">
+          <ScalarProperty Name="URUNSERINO" ColumnName="URUNSERINO" />
           <ScalarProperty Name="ISLEMID" ColumnName="ISLEMID" />
-          <ScalarProperty Name="URUN" ColumnName="URUN" />
           <ScalarProperty Name="CARI" ColumnName="CARI" />
           <ScalarProperty Name="PERSONEL" ColumnName="PERSONEL" />
           <ScalarProperty Name="GELISTARIHI" ColumnName="GELISTARIHI" />
@@ -178,11 +179,10 @@
     <EntitySetMapping Name="TBL_UrunTakip">
       <EntityTypeMapping TypeName="DBTEKNIKSERVISModel.TBL_UrunTakip">
         <MappingFragment StoreEntitySet="TBL_UrunTakip">
+          <ScalarProperty Name="SERINO" ColumnName="SERINO" />
+          <ScalarProperty Name="ACIKLAMA" ColumnName="ACIKLAMA" />
           <ScalarProperty Name="TAKIPID" ColumnName="TAKIPID" />
-          <ScalarProperty Name="URUN" ColumnName="URUN" />
-          <ScalarProperty Name="DURUM" ColumnName="DURUM" />
           <ScalarProperty Name="TARIH" ColumnName="TARIH" />
-          <ScalarProperty Name="TAKIPKODU" ColumnName="TAKIPKODU" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

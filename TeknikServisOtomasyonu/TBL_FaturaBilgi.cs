@@ -25,6 +25,5 @@ namespace TeknikServisOtomasyonu
     
         public virtual TBL_Cari TBL_Cari { get; set; }
         public virtual TBL_Personel TBL_Personel { get; set; }
-        public virtual TBL_FaturaDetay TBL_FaturaDetay { get; set; }
     }
 }

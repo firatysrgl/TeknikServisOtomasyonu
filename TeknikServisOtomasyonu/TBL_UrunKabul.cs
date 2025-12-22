@@ -15,14 +15,13 @@ namespace TeknikServisOtomasyonu
     public partial class TBL_UrunKabul
     {
         public int ISLEMID { get; set; }
-        public Nullable<int> URUN { get; set; }
         public Nullable<int> CARI { get; set; }
         public Nullable<short> PERSONEL { get; set; }
         public Nullable<System.DateTime> GELISTARIHI { get; set; }
         public Nullable<System.DateTime> CIKISTARİHİ { get; set; }
+        public string URUNSERINO { get; set; }
     
         public virtual TBL_Cari TBL_Cari { get; set; }
         public virtual TBL_Personel TBL_Personel { get; set; }
-        public virtual TBL_Urun TBL_Urun { get; set; }
     }
 }

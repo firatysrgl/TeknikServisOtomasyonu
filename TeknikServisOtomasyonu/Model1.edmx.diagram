@@ -26,13 +26,10 @@
         <AssociationConnector Association="DBTEKNIKSERVISModel.FK_TBL_UrunKabul_TBL_Cari" ManuallyRouted="false" />
         <AssociationConnector Association="DBTEKNIKSERVISModel.FK_TBL_Personel_TBL_Departman1" ManuallyRouted="false" />
         <AssociationConnector Association="DBTEKNIKSERVISModel.FK_TBL_FaturaBilgi_TBL_Personel" ManuallyRouted="false" />
-        <AssociationConnector Association="DBTEKNIKSERVISModel.FK_TBL_FaturaDetay_TBL_FaturaBilgi" ManuallyRouted="false" />
         <AssociationConnector Association="DBTEKNIKSERVISModel.FK_TBL_Urun_TBL_Kategori" ManuallyRouted="false" />
         <AssociationConnector Association="DBTEKNIKSERVISModel.FK_TBL_UrunHareket_TBL_Personel" ManuallyRouted="false" />
         <AssociationConnector Association="DBTEKNIKSERVISModel.FK_TBL_UrunKabul_TBL_Personel" ManuallyRouted="false" />
         <AssociationConnector Association="DBTEKNIKSERVISModel.FK_TBL_UrunHareket_TBL_Urun" ManuallyRouted="false" />
-        <AssociationConnector Association="DBTEKNIKSERVISModel.FK_TBL_UrunKabul_TBL_Urun" ManuallyRouted="false" />
-        <AssociationConnector Association="DBTEKNIKSERVISModel.FK_TBL_UrunTakip_TBL_Urun" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

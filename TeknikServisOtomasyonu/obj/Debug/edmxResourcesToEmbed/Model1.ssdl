@@ -147,27 +147,27 @@
     <Property Name="TARIH" Type="smalldatetime" />
     <Property Name="ADET" Type="smallint" />
     <Property Name="FIYAT" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="URUNSERINO" Type="char" MaxLength="5" />
   </EntityType>
   <EntityType Name="TBL_UrunKabul">
     <Key>
       <PropertyRef Name="ISLEMID" />
     </Key>
     <Property Name="ISLEMID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="URUN" Type="int" />
     <Property Name="CARI" Type="int" />
     <Property Name="PERSONEL" Type="smallint" />
     <Property Name="GELISTARIHI" Type="smalldatetime" />
     <Property Name="CIKISTARİHİ" Type="smalldatetime" />
+    <Property Name="URUNSERINO" Type="char" MaxLength="5" />
   </EntityType>
   <EntityType Name="TBL_UrunTakip">
     <Key>
       <PropertyRef Name="TAKIPID" />
     </Key>
     <Property Name="TAKIPID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="URUN" Type="int" />
-    <Property Name="DURUM" Type="varchar" MaxLength="250" />
-    <Property Name="TARIH" Type="int" />
-    <Property Name="TAKIPKODU" Type="char" MaxLength="5" />
+    <Property Name="ACIKLAMA" Type="varchar" MaxLength="250" />
+    <Property Name="TARIH" Type="smalldatetime" />
+    <Property Name="SERINO" Type="char" MaxLength="5" />
   </EntityType>
   <Association Name="FK_TBL_FaturaBilgi_TBL_Cari">
     <End Role="TBL_Cari" Type="Self.TBL_Cari" Multiplicity="0..1" />
@@ -190,18 +190,6 @@
       </Principal>
       <Dependent Role="TBL_FaturaBilgi">
         <PropertyRef Name="PERSONEL" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_TBL_FaturaDetay_TBL_FaturaBilgi">
-    <End Role="TBL_FaturaBilgi" Type="Self.TBL_FaturaBilgi" Multiplicity="1" />
-    <End Role="TBL_FaturaDetay" Type="Self.TBL_FaturaDetay" Multiplicity="0..1" />
-    <ReferentialConstraint>
-      <Principal Role="TBL_FaturaBilgi">
-        <PropertyRef Name="ID" />
-      </Principal>
-      <Dependent Role="TBL_FaturaDetay">
-        <PropertyRef Name="FATURADETAYID" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -289,30 +277,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_TBL_UrunKabul_TBL_Urun">
-    <End Role="TBL_Urun" Type="Self.TBL_Urun" Multiplicity="0..1" />
-    <End Role="TBL_UrunKabul" Type="Self.TBL_UrunKabul" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="TBL_Urun">
-        <PropertyRef Name="ID" />
-      </Principal>
-      <Dependent Role="TBL_UrunKabul">
-        <PropertyRef Name="URUN" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_TBL_UrunTakip_TBL_Urun">
-    <End Role="TBL_Urun" Type="Self.TBL_Urun" Multiplicity="0..1" />
-    <End Role="TBL_UrunTakip" Type="Self.TBL_UrunTakip" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="TBL_Urun">
-        <PropertyRef Name="ID" />
-      </Principal>
-      <Dependent Role="TBL_UrunTakip">
-        <PropertyRef Name="URUN" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <EntityContainer Name="DBTEKNIKSERVISModelStoreContainer">
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TBL_Admin" EntityType="Self.TBL_Admin" Schema="dbo" store:Type="Tables" />
@@ -337,10 +301,6 @@
     <AssociationSet Name="FK_TBL_FaturaBilgi_TBL_Personel" Association="Self.FK_TBL_FaturaBilgi_TBL_Personel">
       <End Role="TBL_Personel" EntitySet="TBL_Personel" />
       <End Role="TBL_FaturaBilgi" EntitySet="TBL_FaturaBilgi" />
-    </AssociationSet>
-    <AssociationSet Name="FK_TBL_FaturaDetay_TBL_FaturaBilgi" Association="Self.FK_TBL_FaturaDetay_TBL_FaturaBilgi">
-      <End Role="TBL_FaturaBilgi" EntitySet="TBL_FaturaBilgi" />
-      <End Role="TBL_FaturaDetay" EntitySet="TBL_FaturaDetay" />
     </AssociationSet>
     <AssociationSet Name="FK_TBL_Personel_TBL_Departman1" Association="Self.FK_TBL_Personel_TBL_Departman1">
       <End Role="TBL_Departman" EntitySet="TBL_Departman" />
@@ -369,14 +329,6 @@
     <AssociationSet Name="FK_TBL_UrunKabul_TBL_Personel" Association="Self.FK_TBL_UrunKabul_TBL_Personel">
       <End Role="TBL_Personel" EntitySet="TBL_Personel" />
       <End Role="TBL_UrunKabul" EntitySet="TBL_UrunKabul" />
-    </AssociationSet>
-    <AssociationSet Name="FK_TBL_UrunKabul_TBL_Urun" Association="Self.FK_TBL_UrunKabul_TBL_Urun">
-      <End Role="TBL_Urun" EntitySet="TBL_Urun" />
-      <End Role="TBL_UrunKabul" EntitySet="TBL_UrunKabul" />
-    </AssociationSet>
-    <AssociationSet Name="FK_TBL_UrunTakip_TBL_Urun" Association="Self.FK_TBL_UrunTakip_TBL_Urun">
-      <End Role="TBL_Urun" EntitySet="TBL_Urun" />
-      <End Role="TBL_UrunTakip" EntitySet="TBL_UrunTakip" />
     </AssociationSet>
   </EntityContainer>
 </Schema>

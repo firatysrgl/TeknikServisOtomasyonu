@@ -20,7 +20,5 @@ namespace TeknikServisOtomasyonu
         public Nullable<decimal> FIYAT { get; set; }
         public Nullable<decimal> TUTAR { get; set; }
         public Nullable<int> FATURAID { get; set; }
-    
-        public virtual TBL_FaturaBilgi TBL_FaturaBilgi { get; set; }
     }
 }

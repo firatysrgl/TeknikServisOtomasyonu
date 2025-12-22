@@ -29,6 +29,7 @@ namespace TeknikServisOtomasyonu.Formlar
                                u.STOK,
                                u.ALISFİYAT,
                                u.SATISFİYAT
+
                                
                            };
             gridControl1.DataSource = degerler.ToList();
