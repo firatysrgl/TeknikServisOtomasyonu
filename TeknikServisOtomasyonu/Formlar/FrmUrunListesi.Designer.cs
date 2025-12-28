@@ -32,6 +32,7 @@
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.BtnTemizle = new DevExpress.XtraEditors.SimpleButton();
             this.TxtID = new DevExpress.XtraEditors.TextEdit();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.BtnListele = new DevExpress.XtraEditors.SimpleButton();
@@ -65,7 +66,7 @@
             // 
             // gridControl1
             // 
-            this.gridControl1.Location = new System.Drawing.Point(-1, 0);
+            this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.Size = new System.Drawing.Size(1400, 760);
@@ -85,6 +86,7 @@
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.BtnTemizle);
             this.groupControl1.Controls.Add(this.TxtID);
             this.groupControl1.Controls.Add(this.labelControl7);
             this.groupControl1.Controls.Add(this.BtnListele);
@@ -109,6 +111,16 @@
             this.groupControl1.TabIndex = 1;
             this.groupControl1.Text = "ÜRÜN İŞLEMLERİ";
             // 
+            // BtnTemizle
+            // 
+            this.BtnTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnTemizle.ImageOptions.Image")));
+            this.BtnTemizle.Location = new System.Drawing.Point(122, 538);
+            this.BtnTemizle.Name = "BtnTemizle";
+            this.BtnTemizle.Size = new System.Drawing.Size(250, 56);
+            this.BtnTemizle.TabIndex = 21;
+            this.BtnTemizle.Text = "TEMİZLE";
+            this.BtnTemizle.Click += new System.EventHandler(this.BtnTemizle_Click);
+            // 
             // TxtID
             // 
             this.TxtID.Enabled = false;
@@ -132,7 +144,7 @@
             this.BtnListele.Name = "BtnListele";
             this.BtnListele.Size = new System.Drawing.Size(250, 56);
             this.BtnListele.TabIndex = 18;
-            this.BtnListele.Text = "Listele";
+            this.BtnListele.Text = "LİSTELE";
             this.BtnListele.Click += new System.EventHandler(this.BtnListele_Click);
             // 
             // BtnGuncelle
@@ -142,7 +154,7 @@
             this.BtnGuncelle.Name = "BtnGuncelle";
             this.BtnGuncelle.Size = new System.Drawing.Size(250, 56);
             this.BtnGuncelle.TabIndex = 17;
-            this.BtnGuncelle.Text = "Güncelle";
+            this.BtnGuncelle.Text = "GÜNCELLE";
             this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
             // BtnSil
@@ -268,7 +280,7 @@
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.gridControl1);
             this.Name = "FrmUrunListesi";
-            this.Text = "FrmUrunListesi";
+            this.Text = "Ürün Sayfası";
             this.Load += new System.EventHandler(this.FrmUrunListesi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
@@ -309,5 +321,6 @@
         private DevExpress.XtraEditors.SimpleButton BtnListele;
         private DevExpress.XtraEditors.TextEdit TxtID;
         private DevExpress.XtraEditors.LabelControl labelControl7;
+        private DevExpress.XtraEditors.SimpleButton BtnTemizle;
     }
 }

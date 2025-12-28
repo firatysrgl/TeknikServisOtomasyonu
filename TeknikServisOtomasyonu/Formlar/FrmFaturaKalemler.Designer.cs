@@ -63,7 +63,7 @@
             // 
             this.BtnAra.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnAra.Appearance.Options.UseFont = true;
-            this.BtnAra.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.BtnAra.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnAra.ImageOptions.Image")));
             this.BtnAra.Location = new System.Drawing.Point(331, 22);
             this.BtnAra.Name = "BtnAra";
             this.BtnAra.Size = new System.Drawing.Size(143, 33);
@@ -98,7 +98,7 @@
             this.Controls.Add(this.BtnAra);
             this.Controls.Add(this.gridControl1);
             this.Name = "FrmFaturaKalemler";
-            this.Text = "FrmFormKalemler";
+            this.Text = "Fatura Sorgu";
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtID.Properties)).EndInit();

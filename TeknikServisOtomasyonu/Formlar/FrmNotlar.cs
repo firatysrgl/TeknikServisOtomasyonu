@@ -32,6 +32,7 @@ namespace TeknikServisOtomasyonu.Formlar
             t.BASLIK = TxtBaslik.Text;
             t.ICERIK = Txtİcerik.Text;
             t.DURUM= false;
+            t.TARIH = DateTime.Parse(TxtTarih.Text);
             db.TBL_Notlarım.Add(t);
             db.SaveChanges();
             MessageBox.Show("Not Başarıyla Kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);

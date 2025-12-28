@@ -32,5 +32,15 @@ namespace TeknikServisOtomasyonu.Formlar
             db.SaveChanges();
             MessageBox.Show("Departman Başarıyla Kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void TxtAd_Click(object sender, EventArgs e)
+        {
+            TxtAd.Text = "";
+        }
+
+        private void pictureEdit13_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

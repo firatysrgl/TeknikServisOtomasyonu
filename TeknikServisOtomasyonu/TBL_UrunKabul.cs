@@ -20,6 +20,8 @@ namespace TeknikServisOtomasyonu
         public Nullable<System.DateTime> GELISTARIHI { get; set; }
         public Nullable<System.DateTime> CIKISTARİHİ { get; set; }
         public string URUNSERINO { get; set; }
+        public Nullable<bool> URUNDURUM { get; set; }
+        public string URUNDURUMDETAY { get; set; }
     
         public virtual TBL_Cari TBL_Cari { get; set; }
         public virtual TBL_Personel TBL_Personel { get; set; }

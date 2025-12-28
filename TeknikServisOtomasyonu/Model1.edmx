@@ -100,6 +100,23 @@
           <Property Name="TARIH" Type="smalldatetime" />
           <Property Name="TUTAR" Type="decimal" Precision="18" Scale="2" />
         </EntityType>
+        <EntityType Name="TBL_Hakkımızda">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="METIN" Type="varchar" MaxLength="1000" />
+        </EntityType>
+        <EntityType Name="TBL_Iletisim">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ADSOYAD" Type="varchar" MaxLength="50" />
+          <Property Name="MAIL" Type="varchar" MaxLength="50" />
+          <Property Name="KONU" Type="varchar" MaxLength="50" />
+          <Property Name="MESAJ" Type="varchar" MaxLength="500" />
+        </EntityType>
         <EntityType Name="TBL_Kategori">
           <Key>
             <PropertyRef Name="ID" />
@@ -115,6 +132,7 @@
           <Property Name="BASLIK" Type="varchar" MaxLength="50" />
           <Property Name="ICERIK" Type="varchar" MaxLength="500" />
           <Property Name="DURUM" Type="bit" />
+          <Property Name="TARIH" Type="smalldatetime" />
         </EntityType>
         <EntityType Name="TBL_Personel">
           <Key>
@@ -164,6 +182,8 @@
           <Property Name="GELISTARIHI" Type="smalldatetime" />
           <Property Name="CIKISTARİHİ" Type="smalldatetime" />
           <Property Name="URUNSERINO" Type="char" MaxLength="5" />
+          <Property Name="URUNDURUM" Type="bit" />
+          <Property Name="URUNDURUMDETAY" Type="varchar" MaxLength="30" />
         </EntityType>
         <EntityType Name="TBL_UrunTakip">
           <Key>
@@ -282,6 +302,9 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Function Name="makskategoriurun" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="maksurunmarka" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="urunkategori" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <EntityContainer Name="DBTEKNIKSERVISModelStoreContainer">
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TBL_Admin" EntityType="Self.TBL_Admin" Schema="dbo" store:Type="Tables" />
@@ -292,6 +315,8 @@
           <EntitySet Name="TBL_FaturaBilgi" EntityType="Self.TBL_FaturaBilgi" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TBL_FaturaDetay" EntityType="Self.TBL_FaturaDetay" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TBL_Gider" EntityType="Self.TBL_Gider" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TBL_Hakkımızda" EntityType="Self.TBL_Hakkımızda" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TBL_Iletisim" EntityType="Self.TBL_Iletisim" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TBL_Kategori" EntityType="Self.TBL_Kategori" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TBL_Notlarım" EntityType="Self.TBL_Notlarım" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TBL_Personel" EntityType="Self.TBL_Personel" Schema="dbo" store:Type="Tables" />
@@ -457,6 +482,7 @@
           <Property Name="BASLIK" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="ICERIK" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
           <Property Name="DURUM" Type="Boolean" />
+          <Property Name="TARIH" Type="DateTime" Precision="0" />
         </EntityType>
         <EntityType Name="TBL_Personel">
           <Key>
@@ -517,6 +543,8 @@
           <NavigationProperty Name="TBL_Cari" Relationship="Self.FK_TBL_UrunKabul_TBL_Cari" FromRole="TBL_UrunKabul" ToRole="TBL_Cari" />
           <NavigationProperty Name="TBL_Personel" Relationship="Self.FK_TBL_UrunKabul_TBL_Personel" FromRole="TBL_UrunKabul" ToRole="TBL_Personel" />
           <Property Name="URUNSERINO" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+          <Property Name="URUNDURUM" Type="Boolean" />
+          <Property Name="URUNDURUMDETAY" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="TBL_UrunTakip">
           <Key>
@@ -688,7 +716,33 @@
             <End Role="TBL_Urun" EntitySet="TBL_Urun" />
             <End Role="TBL_UrunHareket" EntitySet="TBL_UrunHareket" />
           </AssociationSet>
+          <EntitySet Name="TBL_Hakkımızda" EntityType="DBTEKNIKSERVISModel.TBL_Hakkımızda" />
+          <EntitySet Name="TBL_Iletisim" EntityType="DBTEKNIKSERVISModel.TBL_Iletisim" />
+          <FunctionImport Name="urunkategori" ReturnType="Collection(DBTEKNIKSERVISModel.urunkategori_Result)" />
+          <FunctionImport Name="makskategoriurun" ReturnType="Collection(String)" />
+          <FunctionImport Name="maksurunmarka" ReturnType="Collection(String)" />
         </EntityContainer>
+        <EntityType Name="TBL_Hakkımızda">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="METIN" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="TBL_Iletisim">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ADSOYAD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="MAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="KONU" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="MESAJ" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <ComplexType Name="urunkategori_Result">
+          <Property Type="String" Name="AD" Nullable="true" MaxLength="30" />
+          <Property Type="Int32" Name="ADET" Nullable="true" />
+        </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -810,6 +864,7 @@
           <EntitySetMapping Name="TBL_Notlarım">
             <EntityTypeMapping TypeName="DBTEKNIKSERVISModel.TBL_Notlarım">
               <MappingFragment StoreEntitySet="TBL_Notlarım">
+                <ScalarProperty Name="TARIH" ColumnName="TARIH" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="BASLIK" ColumnName="BASLIK" />
                 <ScalarProperty Name="ICERIK" ColumnName="ICERIK" />
@@ -861,6 +916,8 @@
           <EntitySetMapping Name="TBL_UrunKabul">
             <EntityTypeMapping TypeName="DBTEKNIKSERVISModel.TBL_UrunKabul">
               <MappingFragment StoreEntitySet="TBL_UrunKabul">
+                <ScalarProperty Name="URUNDURUMDETAY" ColumnName="URUNDURUMDETAY" />
+                <ScalarProperty Name="URUNDURUM" ColumnName="URUNDURUM" />
                 <ScalarProperty Name="URUNSERINO" ColumnName="URUNSERINO" />
                 <ScalarProperty Name="ISLEMID" ColumnName="ISLEMID" />
                 <ScalarProperty Name="CARI" ColumnName="CARI" />
@@ -880,6 +937,35 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <EntitySetMapping Name="TBL_Hakkımızda">
+            <EntityTypeMapping TypeName="DBTEKNIKSERVISModel.TBL_Hakkımızda">
+              <MappingFragment StoreEntitySet="TBL_Hakkımızda">
+                <ScalarProperty Name="METIN" ColumnName="METIN" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TBL_Iletisim">
+            <EntityTypeMapping TypeName="DBTEKNIKSERVISModel.TBL_Iletisim">
+              <MappingFragment StoreEntitySet="TBL_Iletisim">
+                <ScalarProperty Name="MESAJ" ColumnName="MESAJ" />
+                <ScalarProperty Name="KONU" ColumnName="KONU" />
+                <ScalarProperty Name="MAIL" ColumnName="MAIL" />
+                <ScalarProperty Name="ADSOYAD" ColumnName="ADSOYAD" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="urunkategori" FunctionName="DBTEKNIKSERVISModel.Store.urunkategori">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DBTEKNIKSERVISModel.urunkategori_Result">
+                <ScalarProperty Name="AD" ColumnName="AD" />
+                <ScalarProperty Name="ADET" ColumnName="ADET" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="makskategoriurun" FunctionName="DBTEKNIKSERVISModel.Store.makskategoriurun" />
+          <FunctionImportMapping FunctionImportName="maksurunmarka" FunctionName="DBTEKNIKSERVISModel.Store.maksurunmarka" />
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

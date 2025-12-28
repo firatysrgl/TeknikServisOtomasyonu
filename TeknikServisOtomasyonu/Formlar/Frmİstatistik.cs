@@ -40,6 +40,10 @@ namespace TeknikServisOtomasyonu.Formlar
                                    orderby x.STOK ascending
                                    select x.AD).FirstOrDefault();
 
+           labelControl15.Text = db.makskategoriurun().FirstOrDefault();
+
+
+
             labelControl17.Text = (from x in db.TBL_Urun
                                    orderby x.SATISFİYAT descending
                                    select x.AD).FirstOrDefault();
@@ -51,6 +55,10 @@ namespace TeknikServisOtomasyonu.Formlar
             labelControl21.Text = db.TBL_Urun.Where(x => x.KATEGORI == 1).Sum(x => x.STOK).ToString();
 
             labelControl23.Text = db.TBL_Urun.Where(x => x.KATEGORI == 4).Sum(x => x.STOK).ToString();
+
+            labelControl31.Text = db.TBL_UrunKabul.Count().ToString();
+
+            labelControl33.Text = db.maksurunmarka().FirstOrDefault();
 
             labelControl35.Text= (from x in db.TBL_Urun
                                   select x.MARKA).Distinct().Count().ToString();

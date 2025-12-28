@@ -87,7 +87,7 @@
             this.Controls.Add(this.chartControl1);
             this.Controls.Add(this.gridControl1);
             this.Name = "FrmCariİller";
-            this.Text = "FrmCariİller";
+            this.Text = "Müşteri İl İstatistikleri";
             this.Load += new System.EventHandler(this.FrmCariİller_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();

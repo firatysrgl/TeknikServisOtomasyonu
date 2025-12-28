@@ -116,6 +116,7 @@
     <EntitySetMapping Name="TBL_Notlarım">
       <EntityTypeMapping TypeName="DBTEKNIKSERVISModel.TBL_Notlarım">
         <MappingFragment StoreEntitySet="TBL_Notlarım">
+          <ScalarProperty Name="TARIH" ColumnName="TARIH" />
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="BASLIK" ColumnName="BASLIK" />
           <ScalarProperty Name="ICERIK" ColumnName="ICERIK" />
@@ -167,6 +168,8 @@
     <EntitySetMapping Name="TBL_UrunKabul">
       <EntityTypeMapping TypeName="DBTEKNIKSERVISModel.TBL_UrunKabul">
         <MappingFragment StoreEntitySet="TBL_UrunKabul">
+          <ScalarProperty Name="URUNDURUMDETAY" ColumnName="URUNDURUMDETAY" />
+          <ScalarProperty Name="URUNDURUM" ColumnName="URUNDURUM" />
           <ScalarProperty Name="URUNSERINO" ColumnName="URUNSERINO" />
           <ScalarProperty Name="ISLEMID" ColumnName="ISLEMID" />
           <ScalarProperty Name="CARI" ColumnName="CARI" />
@@ -186,5 +189,34 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="TBL_Hakkımızda">
+      <EntityTypeMapping TypeName="DBTEKNIKSERVISModel.TBL_Hakkımızda">
+        <MappingFragment StoreEntitySet="TBL_Hakkımızda">
+          <ScalarProperty Name="METIN" ColumnName="METIN" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_Iletisim">
+      <EntityTypeMapping TypeName="DBTEKNIKSERVISModel.TBL_Iletisim">
+        <MappingFragment StoreEntitySet="TBL_Iletisim">
+          <ScalarProperty Name="MESAJ" ColumnName="MESAJ" />
+          <ScalarProperty Name="KONU" ColumnName="KONU" />
+          <ScalarProperty Name="MAIL" ColumnName="MAIL" />
+          <ScalarProperty Name="ADSOYAD" ColumnName="ADSOYAD" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="urunkategori" FunctionName="DBTEKNIKSERVISModel.Store.urunkategori">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBTEKNIKSERVISModel.urunkategori_Result">
+          <ScalarProperty Name="AD" ColumnName="AD" />
+          <ScalarProperty Name="ADET" ColumnName="ADET" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="makskategoriurun" FunctionName="DBTEKNIKSERVISModel.Store.makskategoriurun" />
+    <FunctionImportMapping FunctionImportName="maksurunmarka" FunctionName="DBTEKNIKSERVISModel.Store.maksurunmarka" />
   </EntityContainerMapping>
 </Mapping>

@@ -195,7 +195,7 @@ Aşağıda yer alan grafikte her bir markanın kaç tane ürünü olduğunu gör
   <data name="pictureEdit4.EditValue" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
-        cwAAEnMBjCK5BwAABRNJREFUaEPtmcmrnEUQwOO+K+4ruOAKevWgIqg3oxEFN9wubhg8qKC4HATzTBDE
+        cQAAEnEB89x6jgAABRNJREFUaEPtmcmrnEUQwOO+K+4ruOAKevWgIqg3oxEFN9wubhg8qKC4HATzTBDE
         g3gSDx4VVEyMiojiX2DEkGhMTHzmZd5UfW8yM13VMyZxWmq+7pn+arbvmzfznof5wceb1129VH/V1dX1
         rVkzY8aMieGcO9aYxRushYeI8JX4sRYeNGbpeufcMbrdqlKpVM4ggieZ8RtmqDOjG/5AjRm3ECWPt1ql
         U3R/E8e5vSfqMsGYxfOJ8F0i5N5J5n1EGdhkTOk83f/EIILPrC3fFP4XM2GGF/xK9kyKCPYRwWZRTiYn
@@ -223,7 +223,7 @@ Aşağıda yer alan grafikte her bir markanın kaç tane ürünü olduğunu gör
   <data name="pictureEdit3.EditValue" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
-        cwAAEnMBjCK5BwAAA2pJREFUeF7tmjmIFEEUhlU8MNBAVFDBA7zwAhU0FI0MBNFQEVFEMVKMRAMDIwMN
+        cQAAEnEB89x6jgAAA2pJREFUeF7tmjmIFEEUhlU8MNBAVFDBA7zwAhU0FI0MBNFQEVFEMVKMRAMDIwMN
         BA0WREEUA0PZSFAwEVEQBAXB2z3mvd5ltvt/PYPitNSyo7uv792Z2ammP/iTmaq/63/TXVPdXTNmlJSU
         lJSUlJRYSBAEcwC6AtArEb5br9N63abQiNADEQ6aAtgXofNBEMzSbQsH4BwfH35iIeil6/JG3acwALRM
         hIZ08Iki1xRJ9y0EIvwkHDgsgBoAHdD9rQagkzposui+9rAW3x9eJUIj4ZDxAuiW9rGSIAhmitBTHTBJ
@@ -244,7 +244,7 @@ Aşağıda yer alan grafikte her bir markanın kaç tane ürünü olduğunu gör
   <data name="pictureEdit2.EditValue" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
-        cwAAEnMBjCK5BwAAAkRJREFUeF7tlzGKFFEQhjfRRG/gDbzBgqiIkZhoYuwNjAxlNRG8i4EKykbLegwj
+        cQAAEnEB89x6jgAAAkRJREFUeF7tlzGKFFEQhjfRRG/gDbzBgqiIkZhoYuwNjAxlNRG8i4EKykbLegwj
         A3Wder0g01VPBHda3jj9pvvvqXlvg256euqDH4aqj7+pZQd6Dg4MwzAMwzAMwzAMw9h7RFy1D8G7IyhO
         NXh3BMWpBu+OoDjV4N2RbDHBzvZkiwl2tidbTNB3D843xfvZLc2PD0CyxQR99+BcySfNjw9AUmJZFvdF
         3Edm+hoSPocZen334Lws3d2ydPdg/lPz4wOQbaKIO2KmBTqr2Utwe+1hdtych3937+l226d5qqeDJoa/
@@ -260,7 +260,7 @@ Aşağıda yer alan grafikte her bir markanın kaç tane ürünü olduğunu gör
   <data name="pictureEdit6.EditValue" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
-        cwAAEnMBjCK5BwAAA7ZJREFUeF7tmkuIHFUUhqNBcREQH4s4ZOFC96LBRZRAzF5JXJltdOkTkpBdgjAo
+        cQAAEnEB89x6jgAAA7ZJREFUeF7tmkuIHFUUhqNBcREQH4s4ZOFC96LBRZRAzF5JXJltdOkTkpBdgjAo
         KER3YsCsYl6ga7NJFHQhZB0FCQgm1DlNT8/Uf6pHHb1y7AzM/Le6u6q6eqZqqA8+aLi3/nMOPQNVt2vX
         ro6Ojo6Oji0HkKeyLHnZ9c+8vmMx0xfM5Dog/5ppcEef5TtAnuf9Owqz5HVAV9cHZwEdmvWO8HU7guHw
         3tNmssxDx8rA9/L1rQeQb+Nh8wXkG76+1aSpHuYhp5mm+grntJIQwoNmeosHLOAtv5bzWkea6rGc4QqZ
@@ -282,7 +282,7 @@ Aşağıda yer alan grafikte her bir markanın kaç tane ürünü olduğunu gör
   <data name="pictureEdit7.EditValue" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
-        cwAAEnMBjCK5BwAABiVJREFUeF7tW2eIJFUQNmcxIeYsCmIAA4IRFVFQxBMVDJhFwR9yKgZORU/OeKAI
+        cQAAEnEB89x6jgAABiVJREFUeF7tW2eIJFUQNmcxIeYsCmIAA4IRFVFQxBMVDJhFwR9yKgZORU/OeKAI
         nogc6GE8E8ohiAkDZvAQznCGOxRvd6pmZ2e3v3pzQael7B7udXXPzuxsb/fsMR98f6a/96qqw3uv6r3Z
         aKMBBhhggD6Ec7X9RHguwC8HAV9qr2+QCMNw4yDgMwB6C6B/RDhsEaBzrH6DwdjY2C4A3wHw737Q5gZ8
         advNeATB8JEitAjghg24DY+zfZSCWq22A0DXANUrwjDcwl6fCGEYbq7tRPi7jAA7kJ63/RWKOPB7RajW
@@ -314,27 +314,33 @@ Aşağıda yer alan grafikte her bir markanın kaç tane ürünü olduğunu gör
   <data name="pictureEdit8.EditValue" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         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
-        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
+        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
+        R4yeewQAAAAASUVORK5CYII=
 </value>
   </data>
 </root>

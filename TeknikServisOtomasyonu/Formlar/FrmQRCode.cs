@@ -25,6 +25,15 @@ namespace TeknikServisOtomasyonu.Formlar
             pictureEdit1.Image = qr.Encode(textEdit1.Text);
 
         }
-        
+
+        private void FrmQRCode_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void pictureEdit13_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -158,11 +158,11 @@
             // 
             // labelControl4
             // 
-            this.labelControl4.Appearance.Font = new System.Drawing.Font("Lucida Fax", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl4.Appearance.Font = new System.Drawing.Font("Segoe UI", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(20, 32);
+            this.labelControl4.Location = new System.Drawing.Point(13, 26);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(207, 25);
+            this.labelControl4.Size = new System.Drawing.Size(211, 31);
             this.labelControl4.TabIndex = 0;
             this.labelControl4.Text = "Toplam Ürün Sayısı";
             // 
@@ -202,11 +202,11 @@
             // 
             // labelControl2
             // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Lucida Fax", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("Segoe UI", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(20, 32);
+            this.labelControl2.Location = new System.Drawing.Point(20, 26);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(221, 25);
+            this.labelControl2.Size = new System.Drawing.Size(227, 31);
             this.labelControl2.TabIndex = 0;
             this.labelControl2.Text = "Toplam Marka Sayısı";
             // 
@@ -240,17 +240,17 @@
             this.labelControl5.Appearance.Options.UseFont = true;
             this.labelControl5.Location = new System.Drawing.Point(20, 88);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(115, 38);
+            this.labelControl5.Size = new System.Drawing.Size(130, 38);
             this.labelControl5.TabIndex = 1;
-            this.labelControl5.Text = "Arçelik";
+            this.labelControl5.Text = "VESTEL";
             // 
             // labelControl6
             // 
-            this.labelControl6.Appearance.Font = new System.Drawing.Font("Lucida Fax", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl6.Appearance.Font = new System.Drawing.Font("Segoe UI", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Location = new System.Drawing.Point(4, 32);
+            this.labelControl6.Location = new System.Drawing.Point(10, 26);
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(296, 25);
+            this.labelControl6.Size = new System.Drawing.Size(298, 31);
             this.labelControl6.TabIndex = 0;
             this.labelControl6.Text = "En Fazla Ürünü Olan Marka";
             // 
@@ -282,7 +282,7 @@
             // 
             this.labelControl7.Appearance.Font = new System.Drawing.Font("Arial Rounded MT Bold", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl7.Appearance.Options.UseFont = true;
-            this.labelControl7.Location = new System.Drawing.Point(3, 88);
+            this.labelControl7.Location = new System.Drawing.Point(14, 88);
             this.labelControl7.Name = "labelControl7";
             this.labelControl7.Size = new System.Drawing.Size(40, 38);
             this.labelControl7.TabIndex = 1;
@@ -290,11 +290,11 @@
             // 
             // labelControl8
             // 
-            this.labelControl8.Appearance.Font = new System.Drawing.Font("Lucida Fax", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl8.Appearance.Font = new System.Drawing.Font("Segoe UI", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl8.Appearance.Options.UseFont = true;
-            this.labelControl8.Location = new System.Drawing.Point(20, 32);
+            this.labelControl8.Location = new System.Drawing.Point(24, 26);
             this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(255, 25);
+            this.labelControl8.Size = new System.Drawing.Size(258, 31);
             this.labelControl8.TabIndex = 0;
             this.labelControl8.Text = "En Yüksek Fiyatlı Marka";
             // 
@@ -405,8 +405,8 @@
             this.labelControl11.Size = new System.Drawing.Size(400, 48);
             this.labelControl11.TabIndex = 5;
             this.labelControl11.Text = "Sistemimizde ürün  girişi , ürün takibi ve kargo takibi hem masaüstü\r\nhemde web t" +
-    "arafından yapılabilmektedir. Aşağıda gördüğünüz grafikte \r\nher bir kategoriye ai" +
-    "t kaç tane ürün olduğu yer almaktadır.";
+    "arafından yapılabilmektedir. Aşağıda gördüğünüz grafikte \r\nher bir Markaya ait k" +
+    "aç tane ürün olduğu yer almaktadır.\r\n";
             // 
             // labelControl12
             // 
@@ -414,9 +414,9 @@
             this.labelControl12.Appearance.Options.UseFont = true;
             this.labelControl12.Location = new System.Drawing.Point(129, 18);
             this.labelControl12.Name = "labelControl12";
-            this.labelControl12.Size = new System.Drawing.Size(211, 28);
+            this.labelControl12.Size = new System.Drawing.Size(241, 28);
             this.labelControl12.TabIndex = 4;
-            this.labelControl12.Text = "Ürünler ve Kategoriler";
+            this.labelControl12.Text = "Markalar ve Ürün Sayıları";
             // 
             // panelControl4
             // 
@@ -525,7 +525,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.gridControl1);
             this.Name = "FrmMarkalar";
-            this.Text = "FrmMarkalar";
+            this.Text = "Marka İstatistikleri";
             this.Load += new System.EventHandler(this.FrmMarkalar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();

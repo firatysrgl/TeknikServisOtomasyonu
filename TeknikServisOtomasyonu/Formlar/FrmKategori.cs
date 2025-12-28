@@ -33,6 +33,8 @@ namespace TeknikServisOtomasyonu.Formlar
 
         private void BtnKaydet_Click(object sender, EventArgs e)
         {
+
+
             TBL_Kategori t = new TBL_Kategori();
             t.AD = TxtAd.Text;
             db.TBL_Kategori.Add(t);
@@ -82,6 +84,12 @@ namespace TeknikServisOtomasyonu.Formlar
             db.SaveChanges();
             MessageBox.Show("Kategori Bilgileri Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+        }
+
+        private void BtnTemizle_Click(object sender, EventArgs e)
+        {
+            TxtAd.Text = "";
+            TxtID.Text = "";
         }
     }
 }

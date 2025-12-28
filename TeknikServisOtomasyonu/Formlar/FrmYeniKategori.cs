@@ -20,12 +20,21 @@ namespace TeknikServisOtomasyonu.Formlar
         private void BtnKaydet_Click(object sender, EventArgs e)
         {
             TBL_Kategori t = new TBL_Kategori();
-            t.AD = TxtUrunAd.Text;
+            t.AD = TxtkategoriAd.Text;
             db.TBL_Kategori.Add(t);
             db.SaveChanges();
             MessageBox.Show("Kategori Başarıyla Eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-       
+        private void pictureEdit13_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void TxtkategoriAd_Click(object sender, EventArgs e)
+        {
+            TxtkategoriAd.Text = "";
+            TxtkategoriAd.Focus();
+        }
     }
 }

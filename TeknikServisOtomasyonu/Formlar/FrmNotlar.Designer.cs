@@ -32,6 +32,9 @@
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.Txtİcerik = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.checkEdit1 = new DevExpress.XtraEditors.CheckEdit();
             this.labelControl27 = new DevExpress.XtraEditors.LabelControl();
             this.BtnListele = new DevExpress.XtraEditors.SimpleButton();
             this.TxtID = new DevExpress.XtraEditors.TextEdit();
@@ -45,19 +48,19 @@
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.checkEdit1 = new DevExpress.XtraEditors.CheckEdit();
-            this.Txtİcerik = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.TxtTarih = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Txtİcerik.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtID.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtBaslik.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Txtİcerik.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtTarih.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // gridControl1
@@ -83,6 +86,8 @@
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.TxtTarih);
+            this.groupControl1.Controls.Add(this.labelControl5);
             this.groupControl1.Controls.Add(this.Txtİcerik);
             this.groupControl1.Controls.Add(this.labelControl4);
             this.groupControl1.Controls.Add(this.checkEdit1);
@@ -101,9 +106,32 @@
             this.groupControl1.TabIndex = 22;
             this.groupControl1.Text = "AJANDA İŞLEMLERİ";
             // 
+            // Txtİcerik
+            // 
+            this.Txtİcerik.Location = new System.Drawing.Point(112, 130);
+            this.Txtİcerik.Name = "Txtİcerik";
+            this.Txtİcerik.Size = new System.Drawing.Size(250, 22);
+            this.Txtİcerik.TabIndex = 25;
+            // 
+            // labelControl4
+            // 
+            this.labelControl4.Location = new System.Drawing.Point(59, 133);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(47, 16);
+            this.labelControl4.TabIndex = 24;
+            this.labelControl4.Text = "İÇERİK :";
+            // 
+            // checkEdit1
+            // 
+            this.checkEdit1.Location = new System.Drawing.Point(115, 197);
+            this.checkEdit1.Name = "checkEdit1";
+            this.checkEdit1.Properties.Caption = "Okundu Olarak İşaretle";
+            this.checkEdit1.Size = new System.Drawing.Size(170, 24);
+            this.checkEdit1.TabIndex = 23;
+            // 
             // labelControl27
             // 
-            this.labelControl27.Location = new System.Drawing.Point(55, 166);
+            this.labelControl27.Location = new System.Drawing.Point(55, 199);
             this.labelControl27.Name = "labelControl27";
             this.labelControl27.Size = new System.Drawing.Size(51, 16);
             this.labelControl27.TabIndex = 22;
@@ -112,7 +140,7 @@
             // BtnListele
             // 
             this.BtnListele.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnListele.ImageOptions.Image")));
-            this.BtnListele.Location = new System.Drawing.Point(112, 395);
+            this.BtnListele.Location = new System.Drawing.Point(112, 428);
             this.BtnListele.Name = "BtnListele";
             this.BtnListele.Size = new System.Drawing.Size(250, 56);
             this.BtnListele.TabIndex = 21;
@@ -138,7 +166,7 @@
             // BtnGuncelle
             // 
             this.BtnGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuncelle.ImageOptions.Image")));
-            this.BtnGuncelle.Location = new System.Drawing.Point(112, 333);
+            this.BtnGuncelle.Location = new System.Drawing.Point(112, 366);
             this.BtnGuncelle.Name = "BtnGuncelle";
             this.BtnGuncelle.Size = new System.Drawing.Size(250, 56);
             this.BtnGuncelle.TabIndex = 17;
@@ -148,7 +176,7 @@
             // BtnSil
             // 
             this.BtnSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnSil.ImageOptions.Image")));
-            this.BtnSil.Location = new System.Drawing.Point(112, 271);
+            this.BtnSil.Location = new System.Drawing.Point(112, 304);
             this.BtnSil.Name = "BtnSil";
             this.BtnSil.Size = new System.Drawing.Size(250, 56);
             this.BtnSil.TabIndex = 16;
@@ -157,7 +185,7 @@
             // BtnKaydet
             // 
             this.BtnKaydet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnKaydet.ImageOptions.Image")));
-            this.BtnKaydet.Location = new System.Drawing.Point(112, 209);
+            this.BtnKaydet.Location = new System.Drawing.Point(112, 242);
             this.BtnKaydet.Name = "BtnKaydet";
             this.BtnKaydet.Size = new System.Drawing.Size(250, 56);
             this.BtnKaydet.TabIndex = 15;
@@ -219,28 +247,23 @@
             this.gridView2.Name = "gridView2";
             this.gridView2.OptionsView.ShowGroupPanel = false;
             // 
-            // checkEdit1
+            // TxtTarih
             // 
-            this.checkEdit1.Location = new System.Drawing.Point(115, 164);
-            this.checkEdit1.Name = "checkEdit1";
-            this.checkEdit1.Properties.Caption = "Okundu Olarak İşaretle";
-            this.checkEdit1.Size = new System.Drawing.Size(170, 24);
-            this.checkEdit1.TabIndex = 23;
+            this.TxtTarih.Location = new System.Drawing.Point(112, 158);
+            this.TxtTarih.Name = "TxtTarih";
+            this.TxtTarih.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.DateOnlyMaskManager));
+            this.TxtTarih.Properties.MaskSettings.Set("MaskManagerSignature", "allowNull=False");
+            this.TxtTarih.Properties.MaskSettings.Set("mask", "d");
+            this.TxtTarih.Size = new System.Drawing.Size(250, 22);
+            this.TxtTarih.TabIndex = 27;
             // 
-            // Txtİcerik
+            // labelControl5
             // 
-            this.Txtİcerik.Location = new System.Drawing.Point(112, 130);
-            this.Txtİcerik.Name = "Txtİcerik";
-            this.Txtİcerik.Size = new System.Drawing.Size(250, 22);
-            this.Txtİcerik.TabIndex = 25;
-            // 
-            // labelControl4
-            // 
-            this.labelControl4.Location = new System.Drawing.Point(59, 133);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(47, 16);
-            this.labelControl4.TabIndex = 24;
-            this.labelControl4.Text = "İÇERİK :";
+            this.labelControl5.Location = new System.Drawing.Point(59, 161);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(41, 16);
+            this.labelControl5.TabIndex = 26;
+            this.labelControl5.Text = "TARİH:";
             // 
             // FrmNotlar
             // 
@@ -253,19 +276,20 @@
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.groupControl1);
             this.Name = "FrmNotlar";
-            this.Text = "FrmNotlar";
+            this.Text = "Notlar";
             this.Load += new System.EventHandler(this.FrmNotlar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Txtİcerik.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtID.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtBaslik.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Txtİcerik.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtTarih.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -291,5 +315,7 @@
         private DevExpress.XtraEditors.CheckEdit checkEdit1;
         private DevExpress.XtraEditors.TextEdit Txtİcerik;
         private DevExpress.XtraEditors.LabelControl labelControl4;
+        private DevExpress.XtraEditors.TextEdit TxtTarih;
+        private DevExpress.XtraEditors.LabelControl labelControl5;
     }
 }

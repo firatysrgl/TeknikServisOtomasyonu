@@ -117,6 +117,7 @@
     <Property Name="BASLIK" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="ICERIK" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
     <Property Name="DURUM" Type="Boolean" />
+    <Property Name="TARIH" Type="DateTime" Precision="0" />
   </EntityType>
   <EntityType Name="TBL_Personel">
     <Key>
@@ -177,6 +178,8 @@
     <NavigationProperty Name="TBL_Cari" Relationship="Self.FK_TBL_UrunKabul_TBL_Cari" FromRole="TBL_UrunKabul" ToRole="TBL_Cari" />
     <NavigationProperty Name="TBL_Personel" Relationship="Self.FK_TBL_UrunKabul_TBL_Personel" FromRole="TBL_UrunKabul" ToRole="TBL_Personel" />
     <Property Name="URUNSERINO" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+    <Property Name="URUNDURUM" Type="Boolean" />
+    <Property Name="URUNDURUMDETAY" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="TBL_UrunTakip">
     <Key>
@@ -348,5 +351,31 @@
       <End Role="TBL_Urun" EntitySet="TBL_Urun" />
       <End Role="TBL_UrunHareket" EntitySet="TBL_UrunHareket" />
     </AssociationSet>
+    <EntitySet Name="TBL_Hakkımızda" EntityType="DBTEKNIKSERVISModel.TBL_Hakkımızda" />
+    <EntitySet Name="TBL_Iletisim" EntityType="DBTEKNIKSERVISModel.TBL_Iletisim" />
+    <FunctionImport Name="urunkategori" ReturnType="Collection(DBTEKNIKSERVISModel.urunkategori_Result)" />
+    <FunctionImport Name="makskategoriurun" ReturnType="Collection(String)" />
+    <FunctionImport Name="maksurunmarka" ReturnType="Collection(String)" />
   </EntityContainer>
+  <EntityType Name="TBL_Hakkımızda">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="METIN" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TBL_Iletisim">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ADSOYAD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="KONU" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MESAJ" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <ComplexType Name="urunkategori_Result">
+    <Property Type="String" Name="AD" Nullable="true" MaxLength="30" />
+    <Property Type="Int32" Name="ADET" Nullable="true" />
+  </ComplexType>
 </Schema>

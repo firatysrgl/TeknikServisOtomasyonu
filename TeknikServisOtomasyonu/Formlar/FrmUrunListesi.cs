@@ -80,6 +80,7 @@ namespace TeknikServisOtomasyonu.Formlar
             TxtMarka.Text = gridView1.GetFocusedRowCellValue("MARKA").ToString();
             TxtAlisFiyat.Text = gridView1.GetFocusedRowCellValue("ALISFİYAT").ToString();
             TxtStok.Text = gridView1.GetFocusedRowCellValue("STOK").ToString();
+            lookUpEdit1.Text= gridView1.GetFocusedRowCellValue("KATEGORI").ToString();
 
         }
 
@@ -105,6 +106,17 @@ namespace TeknikServisOtomasyonu.Formlar
             deger.KATEGORI= byte.Parse(lookUpEdit1.EditValue.ToString());
             db.SaveChanges();
             MessageBox.Show("Ürün Bilgileri Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        }
+
+        private void BtnTemizle_Click(object sender, EventArgs e)
+        {
+            TxtAlisFiyat.Text = "";
+            TxtID.Text = "";
+            TxtMarka.Text = "";
+            TxtSatisFiyat.Text = "";
+            TxtStok.Text = "";
+            TxtUrunAdi.Text = "";
 
         }
     }

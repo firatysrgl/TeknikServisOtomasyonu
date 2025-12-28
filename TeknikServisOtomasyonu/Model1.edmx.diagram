@@ -30,6 +30,8 @@
         <AssociationConnector Association="DBTEKNIKSERVISModel.FK_TBL_UrunHareket_TBL_Personel" ManuallyRouted="false" />
         <AssociationConnector Association="DBTEKNIKSERVISModel.FK_TBL_UrunKabul_TBL_Personel" ManuallyRouted="false" />
         <AssociationConnector Association="DBTEKNIKSERVISModel.FK_TBL_UrunHareket_TBL_Urun" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="DBTEKNIKSERVISModel.TBL_Hakkımızda" Width="1.5" PointX="10.375" PointY="12.75" />
+        <EntityTypeShape EntityType="DBTEKNIKSERVISModel.TBL_Iletisim" Width="1.5" PointX="12.375" PointY="12.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

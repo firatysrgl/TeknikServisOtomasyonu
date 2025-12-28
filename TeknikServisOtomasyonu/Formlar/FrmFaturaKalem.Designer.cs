@@ -241,7 +241,7 @@
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.groupControl1);
             this.Name = "FrmFaturaKalem";
-            this.Text = "FrmFaturaKalem";
+            this.Text = "Fatura Satış Detay";
             this.Load += new System.EventHandler(this.FrmFaturaKalem_Load);
             ((System.ComponentModel.ISupportInitialize)(this.TxtTutar.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtFatura.Properties)).EndInit();

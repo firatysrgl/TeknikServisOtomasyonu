@@ -184,7 +184,7 @@
             // pictureEdit3
             // 
             this.pictureEdit3.EditValue = ((object)(resources.GetObject("pictureEdit3.EditValue")));
-            this.pictureEdit3.Location = new System.Drawing.Point(219, 73);
+            this.pictureEdit3.Location = new System.Drawing.Point(225, 73);
             this.pictureEdit3.Name = "pictureEdit3";
             this.pictureEdit3.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit3.Properties.Appearance.Options.UseBackColor = true;
@@ -196,13 +196,13 @@
             // 
             // labelControl16
             // 
-            this.labelControl16.Appearance.Font = new System.Drawing.Font("Arial Rounded MT Bold", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl16.Appearance.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl16.Appearance.Options.UseFont = true;
-            this.labelControl16.Location = new System.Drawing.Point(33, 94);
+            this.labelControl16.Location = new System.Drawing.Point(23, 102);
             this.labelControl16.Name = "labelControl16";
-            this.labelControl16.Size = new System.Drawing.Size(40, 38);
+            this.labelControl16.Size = new System.Drawing.Size(175, 31);
             this.labelControl16.TabIndex = 1;
-            this.labelControl16.Text = "26";
+            this.labelControl16.Text = "Müşteri İlişkileri";
             // 
             // labelControl17
             // 
@@ -240,13 +240,13 @@
             // 
             // labelControl18
             // 
-            this.labelControl18.Appearance.Font = new System.Drawing.Font("Arial Rounded MT Bold", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl18.Appearance.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl18.Appearance.Options.UseFont = true;
-            this.labelControl18.Location = new System.Drawing.Point(33, 94);
+            this.labelControl18.Location = new System.Drawing.Point(33, 102);
             this.labelControl18.Name = "labelControl18";
-            this.labelControl18.Size = new System.Drawing.Size(40, 38);
+            this.labelControl18.Size = new System.Drawing.Size(110, 31);
             this.labelControl18.TabIndex = 1;
-            this.labelControl18.Text = "26";
+            this.labelControl18.Text = "Muhasebe";
             // 
             // labelControl19
             // 
@@ -368,7 +368,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupControl1);
             this.Name = "FrmDepartman";
-            this.Text = "FrmDepartman";
+            this.Text = "Departman";
             this.Load += new System.EventHandler(this.FrmDepartman_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();

@@ -95,6 +95,23 @@
     <Property Name="TARIH" Type="smalldatetime" />
     <Property Name="TUTAR" Type="decimal" Precision="18" Scale="2" />
   </EntityType>
+  <EntityType Name="TBL_Hakkımızda">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="METIN" Type="varchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="TBL_Iletisim">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ADSOYAD" Type="varchar" MaxLength="50" />
+    <Property Name="MAIL" Type="varchar" MaxLength="50" />
+    <Property Name="KONU" Type="varchar" MaxLength="50" />
+    <Property Name="MESAJ" Type="varchar" MaxLength="500" />
+  </EntityType>
   <EntityType Name="TBL_Kategori">
     <Key>
       <PropertyRef Name="ID" />
@@ -110,6 +127,7 @@
     <Property Name="BASLIK" Type="varchar" MaxLength="50" />
     <Property Name="ICERIK" Type="varchar" MaxLength="500" />
     <Property Name="DURUM" Type="bit" />
+    <Property Name="TARIH" Type="smalldatetime" />
   </EntityType>
   <EntityType Name="TBL_Personel">
     <Key>
@@ -159,6 +177,8 @@
     <Property Name="GELISTARIHI" Type="smalldatetime" />
     <Property Name="CIKISTARİHİ" Type="smalldatetime" />
     <Property Name="URUNSERINO" Type="char" MaxLength="5" />
+    <Property Name="URUNDURUM" Type="bit" />
+    <Property Name="URUNDURUMDETAY" Type="varchar" MaxLength="30" />
   </EntityType>
   <EntityType Name="TBL_UrunTakip">
     <Key>
@@ -277,6 +297,9 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Function Name="makskategoriurun" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="maksurunmarka" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="urunkategori" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
   <EntityContainer Name="DBTEKNIKSERVISModelStoreContainer">
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TBL_Admin" EntityType="Self.TBL_Admin" Schema="dbo" store:Type="Tables" />
@@ -287,6 +310,8 @@
     <EntitySet Name="TBL_FaturaBilgi" EntityType="Self.TBL_FaturaBilgi" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TBL_FaturaDetay" EntityType="Self.TBL_FaturaDetay" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TBL_Gider" EntityType="Self.TBL_Gider" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_Hakkımızda" EntityType="Self.TBL_Hakkımızda" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_Iletisim" EntityType="Self.TBL_Iletisim" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TBL_Kategori" EntityType="Self.TBL_Kategori" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TBL_Notlarım" EntityType="Self.TBL_Notlarım" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TBL_Personel" EntityType="Self.TBL_Personel" Schema="dbo" store:Type="Tables" />

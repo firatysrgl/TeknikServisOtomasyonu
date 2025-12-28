@@ -95,6 +95,7 @@
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
+
             // 
             // TxtID
             // 
@@ -289,7 +290,7 @@
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.groupControl1);
             this.Name = "FrmFaturaListesi";
-            this.Text = "FrmFaturaListesi";
+            this.Text = "Fatura Listesi";
             this.Load += new System.EventHandler(this.FrmFaturaListesi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();

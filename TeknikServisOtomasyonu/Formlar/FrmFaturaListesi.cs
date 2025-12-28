@@ -84,5 +84,6 @@ namespace TeknikServisOtomasyonu.Formlar
             db.SaveChanges();
             MessageBox.Show("Fatura Bilgisi Sisteme Kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
     }
 }

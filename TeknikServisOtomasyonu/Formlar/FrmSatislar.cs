@@ -25,12 +25,14 @@ namespace TeknikServisOtomasyonu.Formlar
                            {
                                u.HAREKETID,
                                u.TBL_Urun.AD,
+                               u.TBL_Urun.MARKA,
                                MUSTERİ = u.TBL_Cari.AD + " " + u.TBL_Cari.SOYAD,
                                PERSONEL = u.TBL_Personel.AD + " " + u.TBL_Personel.SOYAD,
                                u.TARIH,
                                u.ADET,
                                u.FIYAT,
                                u.URUNSERINO
+                               
                            };
             gridControl1.DataSource = degerler.ToList();
 

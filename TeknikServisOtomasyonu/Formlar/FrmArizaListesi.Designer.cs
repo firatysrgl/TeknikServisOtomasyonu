@@ -162,7 +162,7 @@
             // 
             this.labelControl7.Appearance.Font = new System.Drawing.Font("Arial Rounded MT Bold", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl7.Appearance.Options.UseFont = true;
-            this.labelControl7.Location = new System.Drawing.Point(3, 88);
+            this.labelControl7.Location = new System.Drawing.Point(20, 88);
             this.labelControl7.Name = "labelControl7";
             this.labelControl7.Size = new System.Drawing.Size(40, 38);
             this.labelControl7.TabIndex = 1;
@@ -170,11 +170,11 @@
             // 
             // labelControl8
             // 
-            this.labelControl8.Appearance.Font = new System.Drawing.Font("Lucida Fax", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl8.Appearance.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl8.Appearance.Options.UseFont = true;
             this.labelControl8.Location = new System.Drawing.Point(20, 26);
             this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(227, 25);
+            this.labelControl8.Size = new System.Drawing.Size(228, 31);
             this.labelControl8.TabIndex = 0;
             this.labelControl8.Text = "Parça Bekleyen Sayısı";
             // 
@@ -204,21 +204,21 @@
             // 
             // labelControl5
             // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("Arial Rounded MT Bold", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl5.Appearance.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl5.Appearance.Options.UseFont = true;
             this.labelControl5.Location = new System.Drawing.Point(20, 88);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(115, 38);
+            this.labelControl5.Size = new System.Drawing.Size(107, 45);
             this.labelControl5.TabIndex = 1;
             this.labelControl5.Text = "Arçelik";
             // 
             // labelControl6
             // 
-            this.labelControl6.Appearance.Font = new System.Drawing.Font("Lucida Fax", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl6.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Location = new System.Drawing.Point(10, 26);
+            this.labelControl6.Location = new System.Drawing.Point(19, 26);
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(303, 25);
+            this.labelControl6.Size = new System.Drawing.Size(264, 28);
             this.labelControl6.TabIndex = 0;
             this.labelControl6.Text = "Onarımı Tamamlanan Sayısı";
             // 
@@ -258,11 +258,11 @@
             // 
             // labelControl2
             // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Lucida Fax", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(33, 26);
+            this.labelControl2.Location = new System.Drawing.Point(20, 26);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(210, 25);
+            this.labelControl2.Size = new System.Drawing.Size(209, 31);
             this.labelControl2.TabIndex = 0;
             this.labelControl2.Text = "Toplam Arıza Sayısı";
             // 
@@ -289,13 +289,14 @@
             // 
             // gridControl1
             // 
-            this.gridControl1.Location = new System.Drawing.Point(0, -1);
+            this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.Size = new System.Drawing.Size(943, 764);
             this.gridControl1.TabIndex = 11;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
+            this.gridControl1.DoubleClick += new System.EventHandler(this.gridControl1_DoubleClick);
             // 
             // panel5
             // 
@@ -303,7 +304,7 @@
             this.panel5.Controls.Add(this.pictureEdit6);
             this.panel5.Controls.Add(this.labelControl11);
             this.panel5.Controls.Add(this.labelControl12);
-            this.panel5.Location = new System.Drawing.Point(1603, 197);
+            this.panel5.Location = new System.Drawing.Point(1276, 197);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(321, 179);
             this.panel5.TabIndex = 18;
@@ -323,23 +324,23 @@
             // 
             // labelControl11
             // 
-            this.labelControl11.Appearance.Font = new System.Drawing.Font("Arial Rounded MT Bold", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl11.Appearance.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl11.Appearance.Options.UseFont = true;
-            this.labelControl11.Location = new System.Drawing.Point(3, 88);
+            this.labelControl11.Location = new System.Drawing.Point(20, 81);
             this.labelControl11.Name = "labelControl11";
-            this.labelControl11.Size = new System.Drawing.Size(40, 38);
+            this.labelControl11.Size = new System.Drawing.Size(38, 45);
             this.labelControl11.TabIndex = 1;
             this.labelControl11.Text = "26";
             // 
             // labelControl12
             // 
-            this.labelControl12.Appearance.Font = new System.Drawing.Font("Lucida Fax", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl12.Appearance.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl12.Appearance.Options.UseFont = true;
-            this.labelControl12.Location = new System.Drawing.Point(20, 32);
+            this.labelControl12.Location = new System.Drawing.Point(13, 26);
             this.labelControl12.Name = "labelControl12";
-            this.labelControl12.Size = new System.Drawing.Size(242, 25);
+            this.labelControl12.Size = new System.Drawing.Size(212, 31);
             this.labelControl12.TabIndex = 0;
-            this.labelControl12.Text = "En Fazla Arızalı Marka";
+            this.labelControl12.Text = "İptal Edilen İşlemler";
             // 
             // panel6
             // 
@@ -347,7 +348,7 @@
             this.panel6.Controls.Add(this.pictureEdit7);
             this.panel6.Controls.Add(this.labelControl13);
             this.panel6.Controls.Add(this.labelControl14);
-            this.panel6.Location = new System.Drawing.Point(1276, 197);
+            this.panel6.Location = new System.Drawing.Point(1603, 197);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(321, 179);
             this.panel6.TabIndex = 17;
@@ -367,23 +368,23 @@
             // 
             // labelControl13
             // 
-            this.labelControl13.Appearance.Font = new System.Drawing.Font("Arial Rounded MT Bold", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl13.Appearance.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl13.Appearance.Options.UseFont = true;
-            this.labelControl13.Location = new System.Drawing.Point(20, 88);
+            this.labelControl13.Location = new System.Drawing.Point(20, 81);
             this.labelControl13.Name = "labelControl13";
-            this.labelControl13.Size = new System.Drawing.Size(115, 38);
+            this.labelControl13.Size = new System.Drawing.Size(107, 45);
             this.labelControl13.TabIndex = 1;
             this.labelControl13.Text = "Arçelik";
             // 
             // labelControl14
             // 
-            this.labelControl14.Appearance.Font = new System.Drawing.Font("Lucida Fax", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl14.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl14.Appearance.Options.UseFont = true;
-            this.labelControl14.Location = new System.Drawing.Point(31, 32);
+            this.labelControl14.Location = new System.Drawing.Point(20, 26);
             this.labelControl14.Name = "labelControl14";
-            this.labelControl14.Size = new System.Drawing.Size(207, 25);
+            this.labelControl14.Size = new System.Drawing.Size(259, 28);
             this.labelControl14.TabIndex = 0;
-            this.labelControl14.Text = "Toplam Ürün Sayısı";
+            this.labelControl14.Text = "Toplam Servis Alan Ürünler";
             // 
             // panel7
             // 
@@ -418,16 +419,17 @@
             this.labelControl15.Size = new System.Drawing.Size(40, 38);
             this.labelControl15.TabIndex = 1;
             this.labelControl15.Text = "26";
+            this.labelControl15.Click += new System.EventHandler(this.labelControl15_Click);
             // 
             // labelControl16
             // 
-            this.labelControl16.Appearance.Font = new System.Drawing.Font("Lucida Fax", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl16.Appearance.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl16.Appearance.Options.UseFont = true;
-            this.labelControl16.Location = new System.Drawing.Point(20, 32);
+            this.labelControl16.Location = new System.Drawing.Point(17, 26);
             this.labelControl16.Name = "labelControl16";
-            this.labelControl16.Size = new System.Drawing.Size(196, 25);
+            this.labelControl16.Size = new System.Drawing.Size(277, 31);
             this.labelControl16.TabIndex = 0;
-            this.labelControl16.Text = "Arızalı Ürün Geliri";
+            this.labelControl16.Text = "Onay Beklenen Müşteriler";
             // 
             // FrmArizaListesi
             // 
@@ -443,7 +445,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.gridControl1);
             this.Name = "FrmArizaListesi";
-            this.Text = "FrmArizaListesi";
+            this.Text = "Arıza Listesi";
             this.Load += new System.EventHandler(this.FrmArizaListesi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);

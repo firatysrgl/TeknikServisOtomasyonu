@@ -26,19 +26,19 @@ namespace TeknikServisOtomasyonu.Formlar
                                u.ID,
                                u.AD,
                                u.SOYAD,
-                               u.MAIL,
-                               u.TELEFON
+                               u.MAIL
+                               
                            };
             gridControl1.DataSource = degerler.ToList();
 
             lookUpEdit1.Properties.DataSource = (from x in db.TBL_Departman
-                                             select new
-                                             {
-                                                 x.ID,
-                                                 x.AD
-                                             }).ToList();
+                                                 select new
+                                                 {
+                                                     x.ID,
+                                                     x.AD
+                                                 }).ToList();
 
-            string ad1, soyad1 ,ad2 ,soyad2 ,ad3 ,soyad3 ,ad4 ,soyad4;
+            string ad1, soyad1, ad2, soyad2, ad3, soyad3, ad4, soyad4;
             //Personel1
             ad1 = db.TBL_Personel.First(x => x.ID == 1).AD;
             soyad1 = db.TBL_Personel.First(x => x.ID == 1).SOYAD;
@@ -67,6 +67,62 @@ namespace TeknikServisOtomasyonu.Formlar
             labelControl22.Text = db.TBL_Personel.First(x => x.ID == 4).TBL_Departman.AD;
             labelControl21.Text = db.TBL_Personel.First(x => x.ID == 4).MAIL;
 
+        }
+
+        private void BtnKaydet_Click(object sender, EventArgs e)
+        {
+            TBL_Personel t = new TBL_Personel();
+            t.AD = TxtAd.Text;
+            t.SOYAD = TxtSoyad.Text;
+            t.MAIL = TxtMail.Text;
+            t.DEPARTMAN = byte.Parse(lookUpEdit1.EditValue.ToString());
+
+            db.TBL_Personel.Add(t);
+            db.SaveChanges();
+            MessageBox.Show("Personel Başarıyla Eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void BtnListele_Click(object sender, EventArgs e)
+        {
+            var degerler = from u in db.TBL_Personel
+                           select new
+                           {
+                               u.ID,
+                               u.AD,
+                               u.SOYAD,
+                               u.MAIL
+                               
+                           };
+            gridControl1.DataSource = degerler.ToList();
+
+            lookUpEdit1.Properties.DataSource = (from x in db.TBL_Departman
+                                                 select new
+                                                 {
+                                                     x.ID,
+                                                     x.AD
+                                                 }).ToList();
+                                                 
+        }
+
+        private void BtnSil_Click(object sender, EventArgs e)
+        {
+            int id = int.Parse(TxtID.Text);
+            var deger = db.TBL_Personel.Find(id);
+            db.TBL_Personel.Remove(deger);
+            db.SaveChanges();
+            MessageBox.Show("Personel Sistemden Silindi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+        private void BtnGuncelle_Click(object sender, EventArgs e)
+        {
+            TBL_Personel t = new TBL_Personel();
+            t.AD = TxtAd.Text;
+            t.SOYAD = TxtSoyad.Text;
+            t.MAIL = TxtMail.Text;
+            t.DEPARTMAN = byte.Parse(lookUpEdit1.EditValue.ToString());
+            db.TBL_Personel.Add(t);
+            db.SaveChanges();
+            MessageBox.Show("Personel Sisteme Kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

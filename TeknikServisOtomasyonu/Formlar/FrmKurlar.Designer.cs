@@ -48,7 +48,7 @@
             this.ClientSize = new System.Drawing.Size(1924, 763);
             this.Controls.Add(this.webBrowser1);
             this.Name = "FrmKurlar";
-            this.Text = "FrmKurlar";
+            this.Text = "Canlı Kur Sayfası";
             this.Load += new System.EventHandler(this.FrmKurlar_Load);
             this.ResumeLayout(false);
 

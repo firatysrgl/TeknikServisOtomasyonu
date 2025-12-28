@@ -250,7 +250,7 @@
   <data name="pictureEdit5.EditValue" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
-        cgAAEnIBXmVb4wAADtlJREFUeF7tWwlUlfW213t7TQ4N3uq9JhAQOAcOHjjMMiMIgswHZRJFZkTzWeq9
+        cQAAEnEB89x6jgAADtlJREFUeF7tWwlUlfW213t7TQ4N3uq9JhAQOAcOHjjMMiMIgswHZRJFZkTzWeq9
         DjztSZQoqF0RZ7QcwJhFEPSoILi6Vk7V1VzdV/fKdUgtzdLS335rf993Er8YT2q1Fr+1fouz93/v397f
         9P9GBgzoRz/60Y9+9OO+4uVsKF+YimkvZGHdi1loeSEL516Yist3MQvnpDGOyTbKgEKu87uCUSapjbOw
         zCgT/zTOIjKERln40jgTS42nYqRc/7eJHPqDSRrCTdJx2DSDSE+TDFw0zcBOkwzMMsmE74gMKMyy8Yx+
@@ -324,7 +324,7 @@ Aşağıda yer alan grafikte her bir markanın kaç tane ürünü olduğunu gör
   <data name="pictureEdit6.EditValue" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
-        cwAAEnMBjCK5BwAABDZJREFUeF7tl12IW0UUx7O29RtLRbR+QusHtaCCrd2QzCQPVSkoiuiKT74IBWWp
+        cQAAEnEB89x6jgAABDZJREFUeF7tl12IW0UUx7O29RtLRbR+QusHtaCCrd2QzCQPVSkoiuiKT74IBWWp
         fVL8QisKRREp+KIiSJ+6q9TdnJOstdBFVJR1Wy3dJjlzd20tiEotWvyAxerI3M2Gm/9N9iO9CVXnB/+X
         yTlnzvzv3JmbVMrj8Xg8Ho+nQ6SPDZyHY6eLEnpaG7YLkRL+AfO7Ri6ge5Thn5ShV9dODJ6Nv58OyvAu
         XGymOtTEABrA3I7jnroW2tnQjNDhXKV4E8a2yx1f77lACR+arb967A27pNRvbz64s9EEoX7M7Sj5YPg6
@@ -348,7 +348,7 @@ Aşağıda yer alan grafikte her bir markanın kaç tane ürünü olduğunu gör
   <data name="pictureEdit12.EditValue" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
-        cwAAEnMBjCK5BwAAD0VJREFUeF7tmglUVGeWx4npZCaZ7p5Od2s02nFaAZWlCopddhRRWRXKhR0KUcAl
+        cQAAEnEB89x6jgAAD0VJREFUeF7tmglUVGeWx4npZCaZ7p5Od2s02nFaAZWlCopddhRRWRXKhR0KUcAl
         4BJBaTQxcYlLNMGI4samQAEWArJabIEeE50ZY0dJ7O6MmWTadE+mFQU3/nfOrapnVT3AJQd6Zjz8zrnn
         vPfd/3fv/V493ve972FiMsIII4zwN+T1lWQ3IQVN41PQM2E5kdZwe8JyNL62AtPF+meKiclkMzEFtyem
         EA1kr6eglzXifs8Mk5NQODmJaFIS8iYl0j8K7Xw8aRny2cca417PEObL8LX5MqKpCTAX+yYnw5R95svw
@@ -419,7 +419,7 @@ Aşağıda yer alan grafikte her bir markanın kaç tane ürünü olduğunu gör
   <data name="pictureEdit11.EditValue" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
-        cwAAEnMBjCK5BwAADIdJREFUeF7tmwlwVFUWhgHHbRwcnXKpcYaZUQMhSy90J50OadIkZOksJCTpLA2d
+        cQAAEnEB89x6jgAADIdJREFUeF7tmwlwVFUWhgHHbRwcnXKpcYaZUQMhSy90J50OadIkZOksJCTpLA2d
         dKezEFQYUZRFMVSiQoCgIDuIWyQkJiSQhSUoBKIzMJZYljOWI7iCUIwsDpay/mfqvPeawB2g00kHsSpf
         1anq/9xz7j3vdb+b++576devjz766KOPPnoVv/EIHFyCSQ+WYLXfBHT4TcBhvxIcu8TYNwEdHPPgBEwc
         PAEBYj+/KAYXkta/GAv8x+Mb//FE3bJifO0/HpWDx0Mj9n99UkoDhhYiLbAIfw8sJrpgRfguoBh1gcV4
@@ -479,7 +479,7 @@ Aşağıda yer alan grafikte her bir markanın kaç tane ürünü olduğunu gör
   <data name="pictureEdit10.EditValue" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
-        cwAAEnMBjCK5BwAAB5FJREFUeF7tmn9MlPcdx7FZ98fadV3tzNKpqwocHAgCHr/kN3jAwd1xcHDAwSGo
+        cQAAEnEB89x6jgAAB5FJREFUeF7tmn9MlPcdx7FZ98fadV3tzNKpqwocHAgCHr/kN3jAwd1xcHDAwSGo
         KOJsJJbirENdKtnadVmdLaY6u9kYuxWOImerQkGl6f7ZsmzJXFmWNOmYERSKdj/Sde/38n3g8OErHFg5
         BHKv5J089/68P5/ne/fkee7y3OPn58OHDx8+fMwpUdV8eHktmpbvxMcrdpJCYnv5ThwWNTm/6Hi6Bk2r
         dpCT6ekavCDnFx1rtqPfv4Zcs40pbm/1dqQp3nZ8MjG9CNFsI4XEdmA1ujXV6JL9RY22mhTytL2oCdtK
@@ -517,7 +517,7 @@ Aşağıda yer alan grafikte her bir markanın kaç tane ürünü olduğunu gör
   <data name="pictureEdit9.EditValue" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
-        cwAAEnMBjCK5BwAACEZJREFUeF7tmgtQlOcVhp3ea5tOq7nVztiZqrDuwi57ARZYl1tAQEQUkIAicotG
+        cQAAEnEB89x6jgAACEZJREFUeF7tmgtQlOcVhp3ea5tOq7nVztiZqrDuwi57ARZYl1tAQEQUkIAicotG
         GxRNFZOq1VYwY1oNwVtwJDDBRiEoELkoVhOnYFurdcbEtkqdZrxMUjMNJNOkib6nc5Zd+3tcYHX2X42z
         z8w7+33nfb/vfPuz/OzOMmqUHz9+/Pjx4xN+vJjophbhH+MXoWL8YlSOX4yLSk+ue2D4ydNEnkiue2CY
         tJCIxeOAhYhzzScsoBjpP5BMXkDE8nT+pSSkAI9oi1GiK0FzUAnO6krwQVAJ0d1IV4z3nXs060pQzHvL
@@ -558,7 +558,7 @@ Aşağıda yer alan grafikte her bir markanın kaç tane ürünü olduğunu gör
   <data name="pictureEdit8.EditValue" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
-        cwAAEnMBjCK5BwAACClJREFUeF7tmQtQVPcZxZM0NnVq29RM0zZN6wRBEcUXxqAiz2UBUUECgoqCoKTF
+        cQAAEnEB89x6jgAACClJREFUeF7tmQtQVPcZxZM0NnVq29RM0zZN6wRBEcUXxqAiz2UBUUECgoqCoKTF
         RCZrAwkqa+NETDIxwcyk46Nx4qAZVAgPkbe8wiZtSWNm2qoxGbU29mHjaFsmjcg5ne/uXlz/4C4Im+DM
         /c2c4fKd73UXdvfPctddBgYGBgYGBgYGBv3y0yfJkSx132HnkWxyJEvd18BgmAjI4ij/NSj0X4tz/mvJ
         kSmc81+DbbKruv+QmZGBwhmZ5J0hvKDuP2RmrcZnszLIgEyGqt5IYWY6wrUdV+OC6g2ZwHRSpMZHGh7b
@@ -599,7 +599,7 @@ Aşağıda yer alan grafikte her bir markanın kaç tane ürünü olduğunu gör
   <data name="pictureEdit7.EditValue" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
-        cwAAEnMBjCK5BwAAB45JREFUeF7tmnlw1HcZxmk9cYq21loNHgQSkjYZMNBySbJLjs3mcHNtyJ0lCeS+
+        cQAAEnEB89x6jgAAB45JREFUeF7tmnlw1HcZxmk9cYq21loNHgQSkjYZMNBySbJLjs3mcHNtyJ0lCeS+
         IAcFiwkTCm1pnbZMpzLqOKXaGf9AQKhQOmECNBhhWqsdQJyOHa3jOI44laMlVp/HeXfzI5u3u2Gv7PLH
         fmaeyX6f9/z9skcyyaxZUaJEiRIlit/EdGDt3HacjunAv+Z2kDMjXJ3bjgsx7Ri4tw9z9A4R4+tt2PON
         NjKsasXvYztxv94l7MxrxdrYVjK2FdfntaBrXiu+qXNCxYOtvMs1yxDOR/wmxDXjdHwzGdeEjTo2E8gs

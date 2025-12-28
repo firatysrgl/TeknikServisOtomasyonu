@@ -121,7 +121,7 @@
   <data name="pictureEdit7.EditValue" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
-        cgAAEnIBXmVb4wAABRdJREFUeF7tmm1o3HQcx+vcfEBBUSfoG0VxQsGtS9ahTKyXtkmVCb6wb0QY2ksO
+        cQAAEnEB89x6jgAABRdJREFUeF7tmm1o3HQcx+vcfEBBUSfoG0VxQsGtS9ahTKyXtkmVCb6wb0QY2ksO
         m7SdCO6FL5IUNioDdYMpDp3a3BjOF74RX0xm8ZLeJdNNhclEJyu195SHW6+Frc6tkVxbe/3d5S75322c
         8P/A59Ul3/D9ctdc766tDYPBYDAYDCYEnZrYQWrSflKTfyE0OUtqUoHQpGlClb4jVHn3k0nxHnhOGLom
         3PURpfghNT5rUUrRpZTZMi+uGi8s65Rpe16mFPv77qO5R2B2Q3jFCE06SqrSIqnJrr9SgZiUh9tc9yaY
@@ -149,7 +149,7 @@
   <data name="pictureEdit1.EditValue" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
-        cgAAEnIBXmVb4wAAAOFJREFUaEPt1cEKwkAMBNB+n6j/f1GkWIXd6+SsLHoog1IsSVZ0HuS02LSyzAyD
+        cQAAEnEB89x6jgAAAOFJREFUaEPt1cEKwkAMBNB+n6j/f1GkWIXd6+SsLHoog1IsSVZ0HuS02LSyzAyD
         iMhXAsoWqEegHoCy4XOzugfKaFZvkfPcseP9i+YvB5TTi/OJl0UNUM68f1H70ewBI5+b1Qsvipr2Z/H+
         RY8rVKb2Ie+ukFm98rKAaTs+v0Ii/65XD6zOfdazB1blPuvZA6tyn3XsAeW+iIesHnDLfZbZAy65zzJ7
         wCX3WWIPKPdFIkT1QFjus8geCMl9FtkDIbnPAntAuS+SwasH0nKfefZASu4zzx5IyX3m2APKfRH5YXel
@@ -211,7 +211,7 @@
   <data name="pictureEdit13.EditValue" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
-        cwAAEnMBjCK5BwAAAnxJREFUaEPtmdFK22AYhr2ppII7mYm4CQPrtqMNtmtQNpgOsQeiKMMb2MHYgdOp
+        cQAAEnEB89x6jgAAAnxJREFUaEPtmdFK22AYhr2ppII7mYm4CQPrtqMNtmtQNpgOsQeiKMMb2MHYgdOp
         4AUow93FNpmIJ65aD2wao5F+8ldT8P3+5Ptju/5u5IXnpE3fPm+SqtS+viJFihS516n7paeB534PfPck
         8FzqCdfvtVP3nTH0yZXAd5ZYea/xnUX0MsrNmeeFFmh47ij6iWndNpoyOzjf0E9M4LkBL7LGKfqJ0ZRY
         Bf3EYIFt0E8MFqQyPECBX+KPdxn0E4MFWh4/oMvtbYrXVyjw+/nzGUTTbyl6/4Y9ngb6icECxqMButza
