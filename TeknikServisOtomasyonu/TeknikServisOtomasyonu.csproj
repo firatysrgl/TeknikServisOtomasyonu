@@ -256,12 +256,6 @@
     <Compile Include="Formlar\FrmYeniUrun.Designer.cs">
       <DependentUpon>FrmYeniUrun.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formlar\FrmYoutube.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formlar\FrmYoutube.Designer.cs">
-      <DependentUpon>FrmYoutube.cs</DependentUpon>
-    </Compile>
     <Compile Include="Formlar\Frmİstatistik.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -449,9 +443,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FrmYeniUrun.resx">
       <DependentUpon>FrmYeniUrun.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formlar\FrmYoutube.resx">
-      <DependentUpon>FrmYoutube.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Frmİstatistik.resx">
       <DependentUpon>Frmİstatistik.cs</DependentUpon>

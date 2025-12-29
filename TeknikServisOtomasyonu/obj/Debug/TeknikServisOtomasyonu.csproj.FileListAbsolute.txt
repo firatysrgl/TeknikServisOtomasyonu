@@ -83,7 +83,6 @@ C:\Users\FIRAT YUNUS\source\repos\TeknikServisOtomasyonu\TeknikServisOtomasyonu\
 C:\Users\FIRAT YUNUS\source\repos\TeknikServisOtomasyonu\TeknikServisOtomasyonu\obj\Debug\TeknikServisOtomasyonu.Formlar.FrmYeniDepartman.resources
 C:\Users\FIRAT YUNUS\source\repos\TeknikServisOtomasyonu\TeknikServisOtomasyonu\obj\Debug\TeknikServisOtomasyonu.Formlar.FrmPersonel.resources
 C:\Users\FIRAT YUNUS\source\repos\TeknikServisOtomasyonu\TeknikServisOtomasyonu\obj\Debug\TeknikServisOtomasyonu.Formlar.FrmKurlar.resources
-C:\Users\FIRAT YUNUS\source\repos\TeknikServisOtomasyonu\TeknikServisOtomasyonu\obj\Debug\TeknikServisOtomasyonu.Formlar.FrmYoutube.resources
 C:\Users\FIRAT YUNUS\source\repos\TeknikServisOtomasyonu\TeknikServisOtomasyonu\obj\Debug\TeknikServisOtomasyonu.Formlar.FrmNotlar.resources
 C:\Users\FIRAT YUNUS\source\repos\TeknikServisOtomasyonu\TeknikServisOtomasyonu\obj\Debug\TeknikServisOtomasyonu.Formlar.FrmArizaListesi.resources
 C:\Users\FIRAT YUNUS\source\repos\TeknikServisOtomasyonu\TeknikServisOtomasyonu\obj\Debug\TeknikServisOtomasyonu.Formlar.FrmUrunSatis.resources

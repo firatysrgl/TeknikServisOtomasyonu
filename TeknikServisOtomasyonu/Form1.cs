@@ -171,17 +171,8 @@ namespace TeknikServisOtomasyonu
             System.Diagnostics.Process.Start("excel");
         }
 
-        Formlar.FrmYoutube fr16;
-        private void barButtonItem29_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            if (fr16 == null || fr16.IsDisposed)
-            {
 
-                fr16 = new Formlar.FrmYoutube();
-                fr16.MdiParent = this;
-                fr16.Show();
-            }
-        }
+       
 
         Formlar.FrmNotlar fr17;
         private void BtnNotListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -386,6 +377,26 @@ namespace TeknikServisOtomasyonu
                 fr15 = new Formlar.FrmKurlar();
                 fr15.MdiParent = this;
                 fr15.Show();
+            }
+        }
+
+        private void BtnWeb_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            // Web sitesini varsayılan tarayıcıda (Chrome vb.) açar
+            string siteAdresi = "https://localhost:44368/Default.aspx";
+
+            try
+            {
+                System.Diagnostics.Process.Start(siteAdresi);
+            }
+            catch (System.ComponentModel.Win32Exception noBrowser)
+            {
+                if (noBrowser.ErrorCode == -2147467259)
+                    MessageBox.Show(noBrowser.Message);
+            }
+            catch (System.Exception other)
+            {
+                MessageBox.Show(other.Message);
             }
         }
     }

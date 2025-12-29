@@ -30,6 +30,7 @@ namespace TeknikServisOtomasyonu
                 Form1 frm = new Form1();
                 frm.Show();
                 this.Hide();
+               
             }
             else
             {

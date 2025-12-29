@@ -210,6 +210,7 @@
             this.pictureEdit13.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
             this.pictureEdit13.Size = new System.Drawing.Size(35, 35);
             this.pictureEdit13.TabIndex = 90;
+            this.pictureEdit13.Click += new System.EventHandler(this.pictureEdit13_Click);
             // 
             // FrmMail
             // 

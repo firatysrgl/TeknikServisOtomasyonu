@@ -69,5 +69,10 @@ namespace TeknikServisOtomasyonu.Iletisim
         {
             this.Close();
         }
+
+        private void pictureEdit13_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
