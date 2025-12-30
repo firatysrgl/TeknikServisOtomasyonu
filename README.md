@@ -250,7 +250,7 @@ Kullanıcı Adı: admin
 
 \### 📊 İstatistikler Ekranı
 
-![İstatistikler Ekranı](screenshots/istatistik.png)
+![İstatistikler Ekranı](https://github.com/firatysrgl/TeknikServisOtomasyonu/blob/main/screenshots/istatistikler.png)
 
 
 
