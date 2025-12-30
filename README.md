@@ -232,25 +232,25 @@ Kullanıcı Adı: admin
 
 \### 🔐 Giriş Ekranı
 
-!\[Login](screenshots/login.png)
+![Login](screenshots/login.png)
 
 
 
 \### 🏠 Anasayfa Ekranı
 
-!\[Ana Sayfa](screenshots/anasayfa.png)
+![Ana Sayfa](screenshots/anasayfa.png)
 
 
 
 \### 🛠️ Ürün Yönetimi
 
-!\[Ürün Yönetimi](screenshots/ürün-listesi.png)
+![Ürün Yönetimi](screenshots/ürün-listesi.png)
 
 
 
 \### 📊 İstatistikler Ekranı
 
-!\[İstatistikler Ekranı](screenshots/istatistik.png)
+![İstatistikler Ekranı](screenshots/istatistik.png)
 
 
 
