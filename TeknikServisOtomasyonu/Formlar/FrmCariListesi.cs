@@ -41,6 +41,7 @@ namespace TeknikServisOtomasyonu.Formlar
         {
             liste();
             labelControl12.Text = db.TBL_Cari.Count().ToString();
+            labelControl14.Text = db.TBL_Iletisim
         }
 
         private void BtnKaydet_Click(object sender, EventArgs e)
@@ -93,6 +94,11 @@ namespace TeknikServisOtomasyonu.Formlar
                            };
           
             gridControl1.DataSource = degerler.ToList();
+        }
+
+        private void labelControl14_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

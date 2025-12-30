@@ -438,7 +438,8 @@
             this.labelControl14.Name = "labelControl14";
             this.labelControl14.Size = new System.Drawing.Size(40, 38);
             this.labelControl14.TabIndex = 1;
-            this.labelControl14.Text = "26";
+            this.labelControl14.Text = "21";
+            this.labelControl14.Click += new System.EventHandler(this.labelControl14_Click);
             // 
             // labelControl15
             // 
