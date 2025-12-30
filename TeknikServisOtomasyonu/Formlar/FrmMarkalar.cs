@@ -67,14 +67,6 @@ namespace TeknikServisOtomasyonu.Formlar
 
         }
 
-        private void labelControl9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureEdit10_EditValueChanged(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

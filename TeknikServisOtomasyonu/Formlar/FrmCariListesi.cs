@@ -41,7 +41,7 @@ namespace TeknikServisOtomasyonu.Formlar
         {
             liste();
             labelControl12.Text = db.TBL_Cari.Count().ToString();
-            labelControl14.Text = db.TBL_Iletisim
+            labelControl14.Text = db.TBL_Iletisim.Count().ToString();
         }
 
         private void BtnKaydet_Click(object sender, EventArgs e)
