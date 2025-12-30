@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBTEKNIKSERVISModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="TBL_Admin">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KULLANICIAD" Type="varchar" MaxLength="10" />
+    <Property Name="SIFRE" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="TBL_Araclar">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AD" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TBL_ArızaDetay">
+    <Key>
+      <PropertyRef Name="ARIZAID" />
+    </Key>
+    <Property Name="ARIZAID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ISLEM" Type="int" />
+    <Property Name="SORUN" Type="varchar" MaxLength="250" />
+    <Property Name="ACIKLAMA" Type="varchar" MaxLength="400" />
+    <Property Name="ONFİYAT" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="NETFİYAT" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="ISLEMLER" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="TBL_Cari">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AD" Type="varchar" MaxLength="30" />
+    <Property Name="SOYAD" Type="varchar" MaxLength="30" />
+    <Property Name="TELEFON" Type="varchar" MaxLength="20" />
+    <Property Name="MAIL" Type="varchar" MaxLength="50" />
+    <Property Name="IL" Type="varchar" MaxLength="20" />
+    <Property Name="ILCE" Type="varchar" MaxLength="20" />
+    <Property Name="BANKA" Type="varchar" MaxLength="50" />
+    <Property Name="VERGINO" Type="varchar" MaxLength="50" />
+    <Property Name="VERGIDAIRESI" Type="varchar" MaxLength="50" />
+    <Property Name="STATU" Type="varchar" MaxLength="50" />
+    <Property Name="ADRES" Type="varchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="TBL_Departman">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AD" Type="varchar" MaxLength="50" />
+    <Property Name="ACIKLAMA" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="TBL_FaturaBilgi">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SERI" Type="char" MaxLength="1" />
+    <Property Name="SIRANO" Type="varchar" MaxLength="6" />
+    <Property Name="TARIH" Type="smalldatetime" />
+    <Property Name="SAAT" Type="char" MaxLength="5" />
+    <Property Name="VERDIDAIRE" Type="varchar" MaxLength="50" />
+    <Property Name="CARI" Type="int" />
+    <Property Name="PERSONEL" Type="smallint" />
+  </EntityType>
+  <EntityType Name="TBL_FaturaDetay">
+    <Key>
+      <PropertyRef Name="FATURADETAYID" />
+    </Key>
+    <Property Name="FATURADETAYID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="URUN" Type="varchar" MaxLength="50" />
+    <Property Name="ADET" Type="smallint" />
+    <Property Name="FIYAT" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TUTAR" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="FATURAID" Type="int" />
+  </EntityType>
+  <EntityType Name="TBL_Gider">
+    <Key>
+      <PropertyRef Name="GIDERID" />
+    </Key>
+    <Property Name="GIDERID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GIDERACIKLAMA" Type="varchar" MaxLength="50" />
+    <Property Name="TARIH" Type="smalldatetime" />
+    <Property Name="TUTAR" Type="decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="TBL_Hakkımızda">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="METIN" Type="varchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="TBL_Iletisim">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ADSOYAD" Type="varchar" MaxLength="50" />
+    <Property Name="MAIL" Type="varchar" MaxLength="50" />
+    <Property Name="KONU" Type="varchar" MaxLength="50" />
+    <Property Name="MESAJ" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="TBL_Kategori">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AD" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="TBL_Notlarım">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BASLIK" Type="varchar" MaxLength="50" />
+    <Property Name="ICERIK" Type="varchar" MaxLength="500" />
+    <Property Name="DURUM" Type="bit" />
+    <Property Name="TARIH" Type="smalldatetime" />
+  </EntityType>
+  <EntityType Name="TBL_Personel">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AD" Type="varchar" MaxLength="30" />
+    <Property Name="SOYAD" Type="varchar" MaxLength="30" />
+    <Property Name="DEPARTMAN" Type="tinyint" />
+    <Property Name="FOTOGRAF" Type="varchar" MaxLength="100" />
+    <Property Name="MAIL" Type="varchar" MaxLength="50" />
+    <Property Name="TELEFON" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="TBL_Urun">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AD" Type="varchar" MaxLength="30" />
+    <Property Name="MARKA" Type="varchar" MaxLength="30" />
+    <Property Name="ALISFİYAT" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="SATISFİYAT" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="STOK" Type="smallint" />
+    <Property Name="KATEGORI" Type="tinyint" />
+    <Property Name="DURUM" Type="bit" />
+  </EntityType>
+  <EntityType Name="TBL_UrunHareket">
+    <Key>
+      <PropertyRef Name="HAREKETID" />
+    </Key>
+    <Property Name="HAREKETID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="URUN" Type="int" />
+    <Property Name="MUSTERI" Type="int" />
+    <Property Name="PERSONEL" Type="smallint" />
+    <Property Name="TARIH" Type="smalldatetime" />
+    <Property Name="ADET" Type="smallint" />
+    <Property Name="FIYAT" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="URUNSERINO" Type="char" MaxLength="5" />
+  </EntityType>
+  <EntityType Name="TBL_UrunKabul">
+    <Key>
+      <PropertyRef Name="ISLEMID" />
+    </Key>
+    <Property Name="ISLEMID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CARI" Type="int" />
+    <Property Name="PERSONEL" Type="smallint" />
+    <Property Name="GELISTARIHI" Type="smalldatetime" />
+    <Property Name="CIKISTARİHİ" Type="smalldatetime" />
+    <Property Name="URUNSERINO" Type="char" MaxLength="5" />
+    <Property Name="URUNDURUM" Type="bit" />
+    <Property Name="URUNDURUMDETAY" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="TBL_UrunTakip">
+    <Key>
+      <PropertyRef Name="TAKIPID" />
+    </Key>
+    <Property Name="TAKIPID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ACIKLAMA" Type="varchar" MaxLength="250" />
+    <Property Name="TARIH" Type="smalldatetime" />
+    <Property Name="SERINO" Type="char" MaxLength="5" />
+  </EntityType>
+  <Association Name="FK_TBL_FaturaBilgi_TBL_Cari">
+    <End Role="TBL_Cari" Type="Self.TBL_Cari" Multiplicity="0..1" />
+    <End Role="TBL_FaturaBilgi" Type="Self.TBL_FaturaBilgi" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBL_Cari">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TBL_FaturaBilgi">
+        <PropertyRef Name="CARI" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TBL_FaturaBilgi_TBL_Personel">
+    <End Role="TBL_Personel" Type="Self.TBL_Personel" Multiplicity="0..1" />
+    <End Role="TBL_FaturaBilgi" Type="Self.TBL_FaturaBilgi" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBL_Personel">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TBL_FaturaBilgi">
+        <PropertyRef Name="PERSONEL" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TBL_Personel_TBL_Departman1">
+    <End Role="TBL_Departman" Type="Self.TBL_Departman" Multiplicity="0..1" />
+    <End Role="TBL_Personel" Type="Self.TBL_Personel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBL_Departman">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TBL_Personel">
+        <PropertyRef Name="DEPARTMAN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TBL_Urun_TBL_Kategori">
+    <End Role="TBL_Kategori" Type="Self.TBL_Kategori" Multiplicity="0..1" />
+    <End Role="TBL_Urun" Type="Self.TBL_Urun" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBL_Kategori">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TBL_Urun">
+        <PropertyRef Name="KATEGORI" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TBL_UrunHareket_TBL_Cari">
+    <End Role="TBL_Cari" Type="Self.TBL_Cari" Multiplicity="0..1" />
+    <End Role="TBL_UrunHareket" Type="Self.TBL_UrunHareket" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBL_Cari">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TBL_UrunHareket">
+        <PropertyRef Name="MUSTERI" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TBL_UrunHareket_TBL_Personel">
+    <End Role="TBL_Personel" Type="Self.TBL_Personel" Multiplicity="0..1" />
+    <End Role="TBL_UrunHareket" Type="Self.TBL_UrunHareket" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBL_Personel">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TBL_UrunHareket">
+        <PropertyRef Name="PERSONEL" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TBL_UrunHareket_TBL_Urun">
+    <End Role="TBL_Urun" Type="Self.TBL_Urun" Multiplicity="0..1" />
+    <End Role="TBL_UrunHareket" Type="Self.TBL_UrunHareket" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBL_Urun">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TBL_UrunHareket">
+        <PropertyRef Name="URUN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TBL_UrunKabul_TBL_Cari">
+    <End Role="TBL_Cari" Type="Self.TBL_Cari" Multiplicity="0..1" />
+    <End Role="TBL_UrunKabul" Type="Self.TBL_UrunKabul" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBL_Cari">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TBL_UrunKabul">
+        <PropertyRef Name="CARI" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TBL_UrunKabul_TBL_Personel">
+    <End Role="TBL_Personel" Type="Self.TBL_Personel" Multiplicity="0..1" />
+    <End Role="TBL_UrunKabul" Type="Self.TBL_UrunKabul" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBL_Personel">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TBL_UrunKabul">
+        <PropertyRef Name="PERSONEL" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="makskategoriurun" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="maksurunmarka" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="urunkategori" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="DBTEKNIKSERVISModelStoreContainer">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_Admin" EntityType="Self.TBL_Admin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_Araclar" EntityType="Self.TBL_Araclar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_ArızaDetay" EntityType="Self.TBL_ArızaDetay" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_Cari" EntityType="Self.TBL_Cari" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_Departman" EntityType="Self.TBL_Departman" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_FaturaBilgi" EntityType="Self.TBL_FaturaBilgi" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_FaturaDetay" EntityType="Self.TBL_FaturaDetay" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_Gider" EntityType="Self.TBL_Gider" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_Hakkımızda" EntityType="Self.TBL_Hakkımızda" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_Iletisim" EntityType="Self.TBL_Iletisim" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_Kategori" EntityType="Self.TBL_Kategori" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_Notlarım" EntityType="Self.TBL_Notlarım" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_Personel" EntityType="Self.TBL_Personel" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_Urun" EntityType="Self.TBL_Urun" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_UrunHareket" EntityType="Self.TBL_UrunHareket" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_UrunKabul" EntityType="Self.TBL_UrunKabul" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_UrunTakip" EntityType="Self.TBL_UrunTakip" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_TBL_FaturaBilgi_TBL_Cari" Association="Self.FK_TBL_FaturaBilgi_TBL_Cari">
+      <End Role="TBL_Cari" EntitySet="TBL_Cari" />
+      <End Role="TBL_FaturaBilgi" EntitySet="TBL_FaturaBilgi" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TBL_FaturaBilgi_TBL_Personel" Association="Self.FK_TBL_FaturaBilgi_TBL_Personel">
+      <End Role="TBL_Personel" EntitySet="TBL_Personel" />
+      <End Role="TBL_FaturaBilgi" EntitySet="TBL_FaturaBilgi" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TBL_Personel_TBL_Departman1" Association="Self.FK_TBL_Personel_TBL_Departman1">
+      <End Role="TBL_Departman" EntitySet="TBL_Departman" />
+      <End Role="TBL_Personel" EntitySet="TBL_Personel" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TBL_Urun_TBL_Kategori" Association="Self.FK_TBL_Urun_TBL_Kategori">
+      <End Role="TBL_Kategori" EntitySet="TBL_Kategori" />
+      <End Role="TBL_Urun" EntitySet="TBL_Urun" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TBL_UrunHareket_TBL_Cari" Association="Self.FK_TBL_UrunHareket_TBL_Cari">
+      <End Role="TBL_Cari" EntitySet="TBL_Cari" />
+      <End Role="TBL_UrunHareket" EntitySet="TBL_UrunHareket" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TBL_UrunHareket_TBL_Personel" Association="Self.FK_TBL_UrunHareket_TBL_Personel">
+      <End Role="TBL_Personel" EntitySet="TBL_Personel" />
+      <End Role="TBL_UrunHareket" EntitySet="TBL_UrunHareket" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TBL_UrunHareket_TBL_Urun" Association="Self.FK_TBL_UrunHareket_TBL_Urun">
+      <End Role="TBL_Urun" EntitySet="TBL_Urun" />
+      <End Role="TBL_UrunHareket" EntitySet="TBL_UrunHareket" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TBL_UrunKabul_TBL_Cari" Association="Self.FK_TBL_UrunKabul_TBL_Cari">
+      <End Role="TBL_Cari" EntitySet="TBL_Cari" />
+      <End Role="TBL_UrunKabul" EntitySet="TBL_UrunKabul" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TBL_UrunKabul_TBL_Personel" Association="Self.FK_TBL_UrunKabul_TBL_Personel">
+      <End Role="TBL_Personel" EntitySet="TBL_Personel" />
+      <End Role="TBL_UrunKabul" EntitySet="TBL_UrunKabul" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
