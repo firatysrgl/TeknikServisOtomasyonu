@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMarkalar));
-            DevExpress.XtraCharts.Series series3 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.PieSeriesView pieSeriesView2 = new DevExpress.XtraCharts.PieSeriesView();
-            DevExpress.XtraCharts.XYDiagram xyDiagram2 = new DevExpress.XtraCharts.XYDiagram();
-            DevExpress.XtraCharts.Series series4 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.StackedBarSeriesView stackedBarSeriesView2 = new DevExpress.XtraCharts.StackedBarSeriesView();
+            DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.PieSeriesView pieSeriesView1 = new DevExpress.XtraCharts.PieSeriesView();
+            DevExpress.XtraCharts.XYDiagram xyDiagram1 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.Series series2 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.StackedBarSeriesView stackedBarSeriesView1 = new DevExpress.XtraCharts.StackedBarSeriesView();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -62,13 +62,6 @@
             this.pictureEdit6 = new DevExpress.XtraEditors.PictureEdit();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
-            this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
-            this.pictureEdit12 = new DevExpress.XtraEditors.PictureEdit();
-            this.pictureEdit11 = new DevExpress.XtraEditors.PictureEdit();
-            this.pictureEdit10 = new DevExpress.XtraEditors.PictureEdit();
-            this.pictureEdit9 = new DevExpress.XtraEditors.PictureEdit();
-            this.pictureEdit8 = new DevExpress.XtraEditors.PictureEdit();
-            this.pictureEdit7 = new DevExpress.XtraEditors.PictureEdit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -83,23 +76,15 @@
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit6.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
-            this.panelControl4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit12.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit11.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit10.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit9.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit8.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // gridControl1
@@ -347,12 +332,12 @@
             this.chartControl1.Location = new System.Drawing.Point(12, 109);
             this.chartControl1.Name = "chartControl1";
             this.chartControl1.PaletteName = "Office 2013";
-            series3.LegendTextPattern = "{A}";
-            series3.Name = "Series 1";
-            series3.SeriesID = 0;
-            series3.View = pieSeriesView2;
+            series1.LegendTextPattern = "{A}";
+            series1.Name = "Series 1";
+            series1.SeriesID = 0;
+            series1.View = pieSeriesView1;
             this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series3};
+        series1};
             this.chartControl1.Size = new System.Drawing.Size(623, 437);
             this.chartControl1.TabIndex = 0;
             // 
@@ -365,23 +350,23 @@
             this.panelControl2.Controls.Add(this.labelControl12);
             this.panelControl2.Location = new System.Drawing.Point(1275, 197);
             this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(647, 465);
+            this.panelControl2.Size = new System.Drawing.Size(647, 554);
             this.panelControl2.TabIndex = 9;
             // 
             // chartControl2
             // 
-            xyDiagram2.AxisX.VisibleInPanesSerializable = "-1";
-            xyDiagram2.AxisY.VisibleInPanesSerializable = "-1";
-            this.chartControl2.Diagram = xyDiagram2;
-            this.chartControl2.Location = new System.Drawing.Point(12, 115);
+            xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
+            xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
+            this.chartControl2.Diagram = xyDiagram1;
+            this.chartControl2.Location = new System.Drawing.Point(12, 110);
             this.chartControl2.Name = "chartControl2";
             this.chartControl2.PaletteName = "Office 2013";
-            series4.Name = "Kategoriler";
-            series4.SeriesID = 2;
-            series4.View = stackedBarSeriesView2;
+            series2.Name = "Kategoriler";
+            series2.SeriesID = 2;
+            series2.View = stackedBarSeriesView1;
             this.chartControl2.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series4};
-            this.chartControl2.Size = new System.Drawing.Size(623, 340);
+        series2};
+            this.chartControl2.Size = new System.Drawing.Size(623, 437);
             this.chartControl2.TabIndex = 7;
             // 
             // pictureEdit6
@@ -417,104 +402,11 @@
             this.labelControl12.TabIndex = 4;
             this.labelControl12.Text = "Markalar ve Ürün Sayıları";
             // 
-            // panelControl4
-            // 
-            this.panelControl4.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.panelControl4.Controls.Add(this.pictureEdit12);
-            this.panelControl4.Controls.Add(this.pictureEdit11);
-            this.panelControl4.Controls.Add(this.pictureEdit10);
-            this.panelControl4.Controls.Add(this.pictureEdit9);
-            this.panelControl4.Controls.Add(this.pictureEdit8);
-            this.panelControl4.Controls.Add(this.pictureEdit7);
-            this.panelControl4.Location = new System.Drawing.Point(1275, 668);
-            this.panelControl4.Name = "panelControl4";
-            this.panelControl4.Size = new System.Drawing.Size(647, 83);
-            this.panelControl4.TabIndex = 10;
-            // 
-            // pictureEdit12
-            // 
-            this.pictureEdit12.EditValue = ((object)(resources.GetObject("pictureEdit12.EditValue")));
-            this.pictureEdit12.Location = new System.Drawing.Point(539, 9);
-            this.pictureEdit12.Name = "pictureEdit12";
-            this.pictureEdit12.Properties.Appearance.BackColor = System.Drawing.Color.Black;
-            this.pictureEdit12.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit12.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.pictureEdit12.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit12.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit12.Size = new System.Drawing.Size(98, 69);
-            this.pictureEdit12.TabIndex = 12;
-            // 
-            // pictureEdit11
-            // 
-            this.pictureEdit11.EditValue = ((object)(resources.GetObject("pictureEdit11.EditValue")));
-            this.pictureEdit11.Location = new System.Drawing.Point(433, 9);
-            this.pictureEdit11.Name = "pictureEdit11";
-            this.pictureEdit11.Properties.Appearance.BackColor = System.Drawing.Color.Black;
-            this.pictureEdit11.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit11.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.pictureEdit11.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit11.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit11.Size = new System.Drawing.Size(98, 69);
-            this.pictureEdit11.TabIndex = 11;
-            // 
-            // pictureEdit10
-            // 
-            this.pictureEdit10.EditValue = ((object)(resources.GetObject("pictureEdit10.EditValue")));
-            this.pictureEdit10.Location = new System.Drawing.Point(327, 9);
-            this.pictureEdit10.Name = "pictureEdit10";
-            this.pictureEdit10.Properties.Appearance.BackColor = System.Drawing.Color.Black;
-            this.pictureEdit10.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit10.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.pictureEdit10.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit10.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit10.Size = new System.Drawing.Size(98, 69);
-            this.pictureEdit10.TabIndex = 10;
-            // 
-            // pictureEdit9
-            // 
-            this.pictureEdit9.EditValue = ((object)(resources.GetObject("pictureEdit9.EditValue")));
-            this.pictureEdit9.Location = new System.Drawing.Point(222, 9);
-            this.pictureEdit9.Name = "pictureEdit9";
-            this.pictureEdit9.Properties.Appearance.BackColor = System.Drawing.Color.Black;
-            this.pictureEdit9.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit9.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.pictureEdit9.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit9.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit9.Size = new System.Drawing.Size(98, 69);
-            this.pictureEdit9.TabIndex = 9;
-            // 
-            // pictureEdit8
-            // 
-            this.pictureEdit8.EditValue = ((object)(resources.GetObject("pictureEdit8.EditValue")));
-            this.pictureEdit8.Location = new System.Drawing.Point(116, 9);
-            this.pictureEdit8.Name = "pictureEdit8";
-            this.pictureEdit8.Properties.Appearance.BackColor = System.Drawing.Color.Black;
-            this.pictureEdit8.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit8.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.pictureEdit8.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit8.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit8.Size = new System.Drawing.Size(98, 69);
-            this.pictureEdit8.TabIndex = 8;
-            // 
-            // pictureEdit7
-            // 
-            this.pictureEdit7.EditValue = ((object)(resources.GetObject("pictureEdit7.EditValue")));
-            this.pictureEdit7.Location = new System.Drawing.Point(10, 9);
-            this.pictureEdit7.Name = "pictureEdit7";
-            this.pictureEdit7.Properties.Appearance.BackColor = System.Drawing.Color.Black;
-            this.pictureEdit7.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit7.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.pictureEdit7.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit7.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit7.Size = new System.Drawing.Size(98, 69);
-            this.pictureEdit7.TabIndex = 7;
-            // 
             // FrmMarkalar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 763);
-            this.Controls.Add(this.panelControl4);
             this.Controls.Add(this.panelControl2);
             this.Controls.Add(this.panelControl1);
             this.Controls.Add(this.panel4);
@@ -543,25 +435,17 @@
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
             this.panelControl2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit6.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
-            this.panelControl4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit12.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit11.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit10.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit9.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit8.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -588,7 +472,6 @@
         private DevExpress.XtraEditors.PictureEdit pictureEdit4;
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private DevExpress.XtraEditors.PanelControl panelControl2;
-        private DevExpress.XtraEditors.PanelControl panelControl4;
         private DevExpress.XtraCharts.ChartControl chartControl1;
         private DevExpress.XtraEditors.LabelControl labelControl9;
         private DevExpress.XtraEditors.LabelControl labelControl10;
@@ -597,11 +480,5 @@
         private DevExpress.XtraEditors.PictureEdit pictureEdit6;
         private DevExpress.XtraEditors.LabelControl labelControl11;
         private DevExpress.XtraEditors.LabelControl labelControl12;
-        private DevExpress.XtraEditors.PictureEdit pictureEdit11;
-        private DevExpress.XtraEditors.PictureEdit pictureEdit10;
-        private DevExpress.XtraEditors.PictureEdit pictureEdit9;
-        private DevExpress.XtraEditors.PictureEdit pictureEdit8;
-        private DevExpress.XtraEditors.PictureEdit pictureEdit7;
-        private DevExpress.XtraEditors.PictureEdit pictureEdit12;
     }
 }

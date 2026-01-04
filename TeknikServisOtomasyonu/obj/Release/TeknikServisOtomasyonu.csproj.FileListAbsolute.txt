@@ -122,3 +122,4 @@ C:\Users\FIRAT YUNUS\source\repos\TeknikServisOtomasyonu\TeknikServisOtomasyonu\
 C:\Users\FIRAT YUNUS\source\repos\TeknikServisOtomasyonu\TeknikServisOtomasyonu\obj\Release\TeknikSe.792EEEEA.Up2Date
 C:\Users\FIRAT YUNUS\source\repos\TeknikServisOtomasyonu\TeknikServisOtomasyonu\obj\Release\TeknikServisOtomasyonu.exe
 C:\Users\FIRAT YUNUS\source\repos\TeknikServisOtomasyonu\TeknikServisOtomasyonu\obj\Release\TeknikServisOtomasyonu.pdb
+C:\Users\FIRAT YUNUS\source\repos\TeknikServisOtomasyonu\TeknikServisOtomasyonu\obj\Release\TeknikServisOtomasyonu.exe.config
